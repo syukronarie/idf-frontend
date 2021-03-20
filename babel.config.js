@@ -1,0 +1,18 @@
+module.exports = (api) => {
+	api.cache(true);
+	return {
+		presets: ['next/babel'],
+		plugins: [
+			[
+				'module-resolver',
+				{
+					root: ['.'],
+					extensions: ['.js', '.jsx', '.es', '.es6', '.mjs', '.ts', '.tsx'],
+					alias: {
+						'@posts': './src/components/posts/',
+					},
+				},
+			],
+		],
+	};
+};
