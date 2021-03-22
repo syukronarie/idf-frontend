@@ -1,6 +1,4 @@
-import React from "react";
-
-const PostPage = () => {
+const PostPage: React.FC = () => {
 	return (
 		<div>
 			<h1>Post Page</h1>

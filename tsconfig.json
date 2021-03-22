@@ -17,7 +17,10 @@
 		"jsx": "preserve",
 		"typeRoots": ["node_modules/@types"],
 		"paths": {
-			"@posts/*": ["./src/components/posts/*"]
+			"@posts/*": ["./src/components/posts/*"],
+			"@home/*": ["./src/components/home/*"],
+			"@navbar/*": ["./src/components/navbar/*"],
+			"@styles/*": ["./src/components/styles/*"]
 		}
 	},
 	"exclude": ["node_modules"],

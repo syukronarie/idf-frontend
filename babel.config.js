@@ -1,18 +1,22 @@
 module.exports = (api) => {
 	api.cache(true);
 	return {
-		presets: ['next/babel'],
+		presets: ["next/babel"],
 		plugins: [
 			[
-				'module-resolver',
+				"module-resolver",
 				{
-					root: ['.'],
-					extensions: ['.js', '.jsx', '.es', '.es6', '.mjs', '.ts', '.tsx'],
+					root: ["."],
+					extensions: [".js", ".jsx", ".es", ".es6", ".mjs", ".ts", ".tsx"],
 					alias: {
-						'@posts': './src/components/posts/',
+						"@posts": "./src/components/posts/",
+						"@home": "./src/components/home/",
+						"@navbar": "./src/components/navbar/",
+						"@styles": "./src/components/styles/",
 					},
 				},
 			],
+			["styled-components"],
 		],
 	};
 };

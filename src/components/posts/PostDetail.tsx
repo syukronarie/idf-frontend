@@ -1,6 +1,4 @@
-import React from "react";
-
-const PostDetail = () => {
+const PostDetail: React.FC = () => {
 	return (
 		<div>
 			<h1>Post Detail</h1>
