@@ -3,7 +3,7 @@
  * [*] Sizing
  */
 
-const Font = {
+const SizingFonts = {
 	xs: "0.75rem",
 	sm: "0.875rem",
 	base: "1rem",
@@ -19,4 +19,4 @@ const Font = {
 	xl9: "8rem",
 };
 
-export default Font;
+export default SizingFonts;

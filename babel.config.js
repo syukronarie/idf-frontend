@@ -3,6 +3,7 @@ module.exports = (api) => {
 	return {
 		presets: ["next/babel"],
 		plugins: [
+			["styled-components"],
 			[
 				"module-resolver",
 				{
@@ -16,7 +17,6 @@ module.exports = (api) => {
 					},
 				},
 			],
-			["styled-components"],
 		],
 	};
 };

@@ -1,38 +1,64 @@
 import Link from "next/link";
-import Colors from "src/styles/globalColors";
-import Font from "src/styles/globalFonts";
-import Sizing from "src/styles/globalSizing";
+import React from "react";
 import styled from "styled-components";
+
+import Colors from "@styles/globalColors";
+import SizingFonts from "@styles/globalFonts";
+import Sizing from "@styles/globalSizing";
 
 /**
  * TODO: CREATING NAVBAR DEKSTOP
  * Including:
  * [ ] Logo Icon
- * [ ] Menus
+ * [*] Menus
  * [ ] Search
  */
 
-const Styled = styled.div`
-	background-color: ${Colors.AQUA_HAZE};
+const menus = [
+	{
+		link: "/",
+		name: "Beranda",
+	},
+	{
+		link: "/profile",
+		name: "Profile",
+	},
+	{
+		link: "/register",
+		name: "Pendaftaran Online",
+	},
+	{
+		link: "/testimony",
+		name: "Testimoni",
+	},
+	{
+		link: "/contact",
+		name: "Kontak kami",
+	},
+];
+
+const NavStyled = styled.div`
+	display: flex;
+	align-items: center;
+	background-color: ${Colors.FUN_BLUE[500]};
 
 	.dekstop {
 		display: flex;
-		justify-content: space-around;
+		justify-content: space-between;
 		align-items: center;
-		font-size: ${Font.sm};
+		width: 80%;
+		margin: auto;
+		font-size: ${SizingFonts.sm};
 		padding: ${Sizing.lg};
 		background-color: ${Colors.FUN_BLUE};
-		color: ${Colors.AQUA_HAZE};
+		color: ${Colors.MYSTIC[500]};
 	}
-
 	.centerSide {
-		font-size: ${Font.sm};
-
+		font-size: ${SizingFonts.sm};
 		ul {
 			display: flex;
 			flex-direction: row;
 		}
-
 		li {
 			padding: 0 10px;
 			cursor: pointer;
@@ -40,39 +66,28 @@ const Styled = styled.div`
 	}
 `;
 
-const NavbarDekstop: React.FC = () => {
+const NavbarDekstop = () => {
 	return (
-		<Styled>
+		<NavStyled>
 			<nav className="dekstop">
 				<div className="leftSide">
 					<h1>Logo</h1>
 				</div>
 				<div className="centerSide">
 					<ul>
-						<Link href="/profile">
-							<li>Profile</li>
-						</Link>
-						<Link href="/register">
-							<li>Pendaftaran Online</li>
-						</Link>
-						<Link href="/career">
-							<li>Info Loker</li>
-						</Link>
-						<Link href="/testimoni">
-							<li>Testimoni</li>
-						</Link>
-
-						<Link href="/about-us">
-							<li>Kontak kami</li>
-						</Link>
+						{menus.map((menu, i) => (
+							<Link key={i} href={menu.link}>
+								<li>{menu.name}</li>
+							</Link>
+						))}
 					</ul>
 				</div>
 				<div className="rightSide">
 					<h1>Search</h1>
 				</div>
 			</nav>
-		</Styled>
+		</NavStyled>
 	);
 };
 
-export default NavbarDekstop;
+export default React.memo(NavbarDekstop);
