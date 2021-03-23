@@ -3,7 +3,7 @@
  * [*] Sizing
  */
 
-const Colors = {
+const COLORS = {
 	FUN_BLUE: {
 		"50": "#f4f8fb",
 		"100": "#e9f0f8",
@@ -54,4 +54,4 @@ const Colors = {
 	},
 };
 
-export default Colors;
+export default COLORS;

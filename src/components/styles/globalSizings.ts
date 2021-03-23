@@ -3,7 +3,7 @@
  * [*] Sizing
  */
 
-const SizingFonts = {
+const GLOBAL_SIZINGS = {
 	xs: "0.75rem",
 	sm: "0.875rem",
 	base: "1rem",
@@ -19,4 +19,4 @@ const SizingFonts = {
 	xl9: "8rem",
 };
 
-export default SizingFonts;
+export default GLOBAL_SIZINGS;

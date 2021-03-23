@@ -1,8 +1,57 @@
+import IconRegister from "src/assets/svg/IconRegister";
+import IconWhatsapp from "src/assets/svg/IconWhatsapp";
 import styled from "styled-components";
 
-import SizingFonts from "@styles/globalFonts";
+import GLOBAL_FLEX from "@styles/globalFlex";
+import GLOBAL_SIZING_FONTS from "@styles/globalSizingFonts";
 
 import Button from "../commons/Button";
+
+const HeaderStyled = styled.div`
+	${GLOBAL_FLEX.START};
+	flex-direction: column;
+	height: 20rem;
+	max-width: 80%;
+	margin: auto;
+
+	.heading {
+		&_title {
+			margin-top: 6rem;
+			font-weight: 500;
+			${GLOBAL_SIZING_FONTS.TEXT_5XL};
+		}
+
+		&_description {
+			font-weight: 500;
+			${GLOBAL_SIZING_FONTS.TEXT_5XL}
+		}
+	}
+
+	.btn-group {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-flow: row;
+		margin: 2rem 0;
+
+		._item {
+			${GLOBAL_FLEX.CENTER};
+		}
+	}
+`;
+
+const Whatsapp = styled(IconWhatsapp)`
+	height: 2rem;
+	width: 2rem;
+	margin-right: 0.5rem;
+`;
+
+const Register = styled(IconRegister)`
+	height: 2rem;
+	width: 1.8rem;
+	margin-right: 0.65rem;
+	margin-left: 0.4rem;
+`;
 
 const HomeHeader: React.FC = () => {
 	return (
@@ -23,47 +72,20 @@ const HomeHeader: React.FC = () => {
 
 			<div className="btn-group">
 				<div className="_item">
-					<Button>Hubungi Kami</Button>
+					<Button>
+						<Whatsapp />
+						Hubungi Kami
+					</Button>
 				</div>
 				<div className="_item">
-					<Button>Daftar Sekarang</Button>
+					<Button>
+						<Register />
+						Daftar Sekarang
+					</Button>
 				</div>
 			</div>
 		</HeaderStyled>
 	);
 };
-
-const HeaderStyled = styled.div`
-	@include FontSizing();
-
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
-	max-width: 1200px;
-	margin: auto;
-
-	.heading {
-		&_title {
-			font-size: ${SizingFonts.xl3};
-		}
-
-		&_description {
-			font-size: ${SizingFonts.xl};
-		}
-	}
-
-	.btn-group {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		flex-flow: row;
-
-		._item {
-			text-align: left;
-			color: black;
-		}
-	}
-`;
 
 export default HomeHeader;

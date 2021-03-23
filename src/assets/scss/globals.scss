@@ -1,9 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
+
 html,
 body {
 	padding: 0;
 	margin: 0;
-	font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-		Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif !important;
+	font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+		Source Sans Pro, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
+		sans-serif !important;
 }
 
 html,
@@ -141,6 +144,7 @@ table {
 }
 
 button {
+	background-color: rgba(0, 0, 0, 0);
 	border: 0;
 	cursor: pointer;
 

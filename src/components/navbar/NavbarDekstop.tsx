@@ -2,9 +2,8 @@ import Link from "next/link";
 import React from "react";
 import styled from "styled-components";
 
-import Colors from "@styles/globalColors";
-import SizingFonts from "@styles/globalFonts";
-import Sizing from "@styles/globalSizing";
+import COLORS from "@styles/globalColors";
+import GLOBAL_SIZING_FONTS from "@styles/globalSizingFonts";
 
 /**
  * TODO: CREATING NAVBAR DEKSTOP
@@ -40,7 +39,7 @@ const menus = [
 const NavStyled = styled.div`
 	display: flex;
 	align-items: center;
-	background-color: ${Colors.FUN_BLUE[500]};
+	background-color: ${COLORS.FUN_BLUE[500]};
 
 	.dekstop {
 		display: flex;
@@ -48,13 +47,12 @@ const NavStyled = styled.div`
 		align-items: center;
 		width: 80%;
 		margin: auto;
-		font-size: ${SizingFonts.sm};
-		padding: ${Sizing.lg};
-		background-color: ${Colors.FUN_BLUE};
-		color: ${Colors.MYSTIC[500]};
+		${GLOBAL_SIZING_FONTS.TEXT_BASE};
+		padding: 20px 0;
+		background-color: ${COLORS.FUN_BLUE};
+		color: ${COLORS.MYSTIC[500]};
 	}
 	.centerSide {
-		font-size: ${SizingFonts.sm};
 		ul {
 			display: flex;
 			flex-direction: row;
