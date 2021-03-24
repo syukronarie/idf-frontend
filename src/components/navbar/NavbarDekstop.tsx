@@ -1,8 +1,10 @@
 import Link from "next/link";
 import React from "react";
+import IconPlane from "src/assets/svg/IconPlane";
 import styled from "styled-components";
 
 import COLORS from "@styles/globalColors";
+import GLOBAL_FLEX from "@styles/globalFlex";
 import GLOBAL_SIZING_FONTS from "@styles/globalSizingFonts";
 
 /**
@@ -39,7 +41,7 @@ const menus = [
 const NavStyled = styled.div`
 	display: flex;
 	align-items: center;
-	background-color: ${COLORS.FUN_BLUE[500]};
+	background-color: ${COLORS.MYSTIC[100]};
 
 	.dekstop {
 		display: flex;
@@ -50,7 +52,7 @@ const NavStyled = styled.div`
 		${GLOBAL_SIZING_FONTS.TEXT_BASE};
 		padding: 20px 0;
 		background-color: ${COLORS.FUN_BLUE};
-		color: ${COLORS.MYSTIC[500]};
+		color: ${COLORS.FUN_BLUE[400]};
 	}
 	.centerSide {
 		ul {
@@ -62,6 +64,19 @@ const NavStyled = styled.div`
 			cursor: pointer;
 		}
 	}
+
+	.btn-register {
+		${GLOBAL_FLEX.CENTER};
+		padding: 10px 30px 10px 20px;
+		color: ${COLORS.MYSTIC[200]};
+		background-color: ${COLORS.FUN_BLUE[500]};
+		font-size: ${GLOBAL_SIZING_FONTS.TEXT_SM};
+	}
+`;
+
+const Plane = styled(IconPlane)`
+	font-size: 1.5rem;
+	margin-right: 1rem;
 `;
 
 const NavbarDekstop = () => {
@@ -81,7 +96,10 @@ const NavbarDekstop = () => {
 					</ul>
 				</div>
 				<div className="rightSide">
-					<h1>Search</h1>
+					<button className="btn-register">
+						<Plane />
+						Daftar Sekarang
+					</button>
 				</div>
 			</nav>
 		</NavStyled>

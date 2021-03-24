@@ -14,6 +14,7 @@ module.exports = (api) => {
 						"@home": "./src/components/home/",
 						"@navbar": "./src/components/navbar/",
 						"@styles": "./src/components/styles/",
+						"@images": "./src/assets/img/",
 					},
 				},
 			],

@@ -20,7 +20,8 @@
 			"@posts/*": ["./src/components/posts/*"],
 			"@home/*": ["./src/components/home/*"],
 			"@navbar/*": ["./src/components/navbar/*"],
-			"@styles/*": ["src/components/styles/*"]
+			"@styles/*": ["src/components/styles/*"],
+			"@images/*": ["src/assets/img/*"]
 		}
 	},
 	"exclude": ["node_modules"],

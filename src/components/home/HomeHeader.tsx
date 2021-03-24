@@ -1,20 +1,51 @@
-import IconRegister from "src/assets/svg/IconRegister";
+import Image from "next/image";
+import IconPlane from "src/assets/svg/IconPlane";
 import IconWhatsapp from "src/assets/svg/IconWhatsapp";
 import styled from "styled-components";
 
+import COLORS from "@styles/globalColors";
 import GLOBAL_FLEX from "@styles/globalFlex";
 import GLOBAL_SIZING_FONTS from "@styles/globalSizingFonts";
 
 import Button from "../commons/Button";
 
 const HeaderStyled = styled.div`
-	${GLOBAL_FLEX.START};
-	flex-direction: column;
-	height: 20rem;
-	max-width: 80%;
-	margin: auto;
-
 	.heading {
+		${GLOBAL_FLEX.START};
+		flex-direction: column;
+		height: 20rem;
+
+		&_image {
+			position: relative;
+			padding-top: 15rem;
+			width: 100%;
+			z-index: -1;
+			object-fit: cover;
+
+			div {
+				height: 80%;
+			}
+
+			img {
+				top: 28rem !important;
+			}
+		}
+
+		&_content {
+			position: absolute;
+			top: 0;
+			width: 100%;
+			margin: auto;
+			top: 11rem;
+
+			&_wrapper {
+				${GLOBAL_FLEX.START};
+				flex-flow: column;
+				padding-left: 10%;
+				color: ${COLORS.MYSTIC[200]};
+			}
+		}
+
 		&_title {
 			margin-top: 6rem;
 			font-weight: 500;
@@ -35,53 +66,67 @@ const HeaderStyled = styled.div`
 		margin: 2rem 0;
 
 		._item {
+			padding-right: 20px;
 			${GLOBAL_FLEX.CENTER};
 		}
 	}
 `;
 
 const Whatsapp = styled(IconWhatsapp)`
-	height: 2rem;
+	height: 1.5rem;
 	width: 2rem;
 	margin-right: 0.5rem;
 `;
 
-const Register = styled(IconRegister)`
-	height: 2rem;
-	width: 1.8rem;
-	margin-right: 0.65rem;
-	margin-left: 0.4rem;
+const Plane = styled(IconPlane)`
+	font-size: 1.5rem;
+	margin-right: 1rem;
 `;
 
 const HomeHeader: React.FC = () => {
 	return (
 		<HeaderStyled>
 			<div className="heading">
-				<h1 className="heading_title">Indonesia Dirgantara Flight</h1>
-				<h2 className="heading_description">
-					Lembaga Pendidikan Pramugari/Pramugara
-				</h2>
-				{/* <ul>
-					<li>Jurusan:</li>
-					<li>🛫 Staf Airlines</li>
-					<li>🛫 Flight Attendant</li>
-					<li>🛫 Marshalling & GSE</li>
-					<li>🛫 Avsec</li>
-				</ul> */}
-			</div>
-
-			<div className="btn-group">
-				<div className="_item">
-					<Button>
-						<Whatsapp />
-						Hubungi Kami
-					</Button>
+				<div className="heading_image">
+					<Image
+						src="/img/plane_01.jpg"
+						layout="responsive"
+						width={"1440"}
+						height={"1060"}
+						objectFit="cover"
+						sizes="100vw"
+					/>
 				</div>
-				<div className="_item">
-					<Button>
-						<Register />
-						Daftar Sekarang
-					</Button>
+				<div className="heading_content">
+					<div className="heading_content_wrapper">
+						<h1 className="heading_title">Indonesia Dirgantara Flight</h1>
+						<h2 className="heading_description">
+							Lembaga Pendidikan Pramugari/Pramugara
+						</h2>
+						<div className="btn-group">
+							<div className="_item">
+								<Button
+									width="13rem"
+									height="4rem"
+									// fontSize={`${GLOBAL_SIZING_FONTS.}`}
+								>
+									<Plane />
+									Daftar Sekarang
+								</Button>
+							</div>
+							<div className="_item">
+								<Button
+									width="13rem"
+									height="4rem"
+									border={`1px solid ${COLORS.MYSTIC[200]}`}
+									backgroundColor={"#fdfdfe59"}
+									color={`${COLORS.MYSTIC[300]}`}>
+									<Whatsapp />
+									Hubungi Kami
+								</Button>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</HeaderStyled>
