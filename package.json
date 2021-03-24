@@ -6,7 +6,7 @@
 		"dev": "next dev",
 		"build": "yarn run clean:build && next build",
 		"start": "next start",
-		"clean:build": "rimraf out* .next"
+		"clean:build": "rimraf build* .next"
 	},
 	"dependencies": {
 		"next": "10.0.9",
