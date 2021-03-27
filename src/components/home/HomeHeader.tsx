@@ -13,12 +13,12 @@ const HeaderStyled = styled.div`
 	.heading {
 		${GLOBAL_FLEX.START};
 		flex-direction: column;
-		height: 20rem;
 
 		&_image {
 			position: relative;
-			padding-top: 15rem;
+			top: -14rem;
 			width: 100%;
+			height: 120vh;
 			z-index: -1;
 			object-fit: cover;
 
@@ -29,6 +29,10 @@ const HeaderStyled = styled.div`
 			img {
 				top: 28rem !important;
 			}
+
+			@media screen and (min-width: 1280px) {
+				top: -14rem;
+			}
 		}
 
 		&_content {
@@ -36,12 +40,12 @@ const HeaderStyled = styled.div`
 			top: 0;
 			width: 100%;
 			margin: auto;
-			top: 11rem;
 
 			&_wrapper {
 				${GLOBAL_FLEX.START};
 				flex-flow: column;
 				padding-left: 10%;
+				padding-top: 13%;
 				color: ${COLORS.MYSTIC[200]};
 			}
 		}
