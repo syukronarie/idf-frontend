@@ -1,13 +1,17 @@
+import FooterDekstop from "../footer/FooterDekstop";
 import NavbarDekstop from "../navbar/NavbarDekstop";
+import HomeActivities from "./HomeActivities";
 import HomeHeader from "./HomeHeader";
-import TestimonySection from "./TestimonySection";
+import HomeTestimony from "./HomeTestimony";
 
 const HomePage: React.FC = () => {
   return (
     <div>
       <NavbarDekstop />
       <HomeHeader />
-      <TestimonySection />
+      <HomeTestimony />
+      <HomeActivities />
+      <FooterDekstop />
     </div>
   );
 };

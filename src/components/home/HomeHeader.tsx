@@ -73,7 +73,7 @@ const Whatsapp = styled(IconWhatsapp)`
   margin-right: 0.5rem;
 `;
 
-const Plane = styled(IconPlane)`
+export const Plane = styled(IconPlane)`
   font-size: 1.5rem;
   margin-right: 1rem;
 `;
@@ -100,11 +100,7 @@ const HomeHeader: React.FC = () => {
             </h2>
             <div className='btn-group'>
               <div className='_item'>
-                <Button
-                  width='13rem'
-                  height='4rem'
-                  // fontSize={`${GLOBAL_SIZING_FONTS.}`}
-                >
+                <Button width='13rem' height='4rem'>
                   <Plane />
                   Daftar Sekarang
                 </Button>
@@ -114,7 +110,8 @@ const HomeHeader: React.FC = () => {
                   width='13rem'
                   height='4rem'
                   border={`1px solid ${COLORS.MYSTIC[200]}`}
-                  backgroundColor={'#fdfdfe59'}
+                  backgroundColorOne={'#fdfdfe59'}
+                  backgroundColorTwo={'#fdfdfe40'}
                   color={`${COLORS.MYSTIC[300]}`}>
                   <Whatsapp />
                   Hubungi Kami
