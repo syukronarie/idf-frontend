@@ -1,8 +1,6 @@
 import "../assets/scss/globals.scss";
 
-import { Fragment } from "react";
-
-import GlobalStyles from "@styles/globalStyles";
+import GlobalStyles from "src/assets/styles/globalStyles";
 
 /**
  * TODO : Pages implementing
@@ -14,15 +12,15 @@ import GlobalStyles from "@styles/globalStyles";
  */
 
 function MyApp({ Component, pageProps }) {
-	return (
-		<>
-			<GlobalStyles />
-			<Component {...pageProps} />
-		</>
-	);
+  return (
+    <>
+      <GlobalStyles />
+      <Component {...pageProps} />
+    </>
+  )
 }
 
-export default MyApp;
+export default MyApp
 
 /*
 Kontent yang dibutuhkan:

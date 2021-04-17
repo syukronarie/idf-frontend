@@ -1,29 +1,29 @@
 {
-	"compilerOptions": {
-		"baseUrl": ".",
-		"target": "es5",
-		"lib": ["dom", "dom.iterable", "esnext"],
-		"allowJs": true,
-		"skipLibCheck": true,
-		"strict": false,
-		"forceConsistentCasingInFileNames": true,
-		"noEmit": true,
-		"allowSyntheticDefaultImports": true,
-		"esModuleInterop": true,
-		"module": "esnext",
-		"moduleResolution": "node",
-		"resolveJsonModule": true,
-		"isolatedModules": true,
-		"jsx": "preserve",
-		"typeRoots": ["node_modules/@types"],
-		"paths": {
-			"@posts/*": ["./src/components/posts/*"],
-			"@home/*": ["./src/components/home/*"],
-			"@navbar/*": ["./src/components/navbar/*"],
-			"@styles/*": ["src/components/styles/*"],
-			"@images/*": ["src/assets/img/*"]
-		}
-	},
-	"exclude": ["node_modules"],
-	"include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"]
+  "compilerOptions": {
+    "baseUrl": ".",
+    "target": "es5",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": false,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "typeRoots": ["node_modules/@types"],
+    "paths": {
+      "@posts/*": ["./src/components/posts/*"],
+      "@home/*": ["./src/components/home/*"],
+      "@navbar/*": ["./src/components/navbar/*"],
+      "@styles/*": ["./src/assets/styles/*"],
+      "@images/*": ["./src/assets/img/*"]
+    }
+  },
+  "exclude": ["node_modules"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"]
 }

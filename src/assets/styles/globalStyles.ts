@@ -7,8 +7,9 @@ const GlobalStyle = createGlobalStyle`
     margin:0;
     padding:0;
     line-height:0;
-	font-size: 12rem;
-	height:1000rem;
+    background-color: #DDDDDD;
+	/* font-size: 12rem; */
+	  height:1000rem;
 
     div,
     span,
