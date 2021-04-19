@@ -1,3 +1,5 @@
+IDF adalah Lembaga Pendidikan Staff Airlines dan Kepramugarian yang merupakan wujud peran serta tanggung jawab dalam usaha mencerdaskan kehidupan bangsa.
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
