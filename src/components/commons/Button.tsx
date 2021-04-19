@@ -1,4 +1,4 @@
-import { Component, ReactNode } from "react";
+import React, { Component, MouseEventHandler, ReactNode } from "react";
 import styled from "styled-components";
 
 import COLORS from "@styles/globalColors";
@@ -15,6 +15,7 @@ type PropsComponents = {
   backgroundColorTwo?: string;
   children: ReactNode;
   component?: Component;
+  onClick?: MouseEventHandler<HTMLButtonElement>;
 };
 
 type PropsStyled = {
@@ -36,8 +37,11 @@ const Button: React.FC<PropsComponents> = ({
   backgroundColorOne,
   backgroundColorTwo,
   children,
-  component
+  component,
+  onClick
 }) => {
+  console.log('button-render');
+
   return (
     <BtnStyled
       fontSize={fontSize}
@@ -48,7 +52,7 @@ const Button: React.FC<PropsComponents> = ({
       backgroundColorOne={backgroundColorOne}
       backgroundColorTwo={backgroundColorTwo}>
       {component}
-      <button>{children}</button>
+      <button onClick={onClick}>{children}</button>
     </BtnStyled>
   );
 };
@@ -81,4 +85,4 @@ const BtnStyled = styled.div<PropsStyled>`
   }
 `;
 
-export default Button;
+export default React.memo(Button);

@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { memo } from "react";
 import COLORS from "src/assets/styles/globalColors";
 import GLOBAL_SIZING_FONTS from "src/assets/styles/globalSizingFonts";
 import GLOBAL_SIZINGS from "src/assets/styles/globalSizings";
@@ -118,6 +119,8 @@ const TestimonyData = [
 ];
 
 const HomeTestimony: React.FC = () => {
+  console.log('home-testimony-render');
+
   return (
     <TestimonyStyled>
       <div className='testimony_heading'>
@@ -159,4 +162,4 @@ const HomeTestimony: React.FC = () => {
   );
 };
 
-export default HomeTestimony;
+export default memo(HomeTestimony);

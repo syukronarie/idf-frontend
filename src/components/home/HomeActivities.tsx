@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { FC } from "react";
+import { FC, memo } from "react";
 import styled from "styled-components";
 
 import COLORS from "@styles/globalColors";
@@ -67,6 +67,8 @@ const HomeActivitiesContainer = styled.div`
 `;
 
 const HomeActivities: FC = () => {
+  console.log('home-activities-render');
+
   return (
     <HomeActivitiesContainer>
       <div className='activities_heading'>
@@ -79,7 +81,7 @@ const HomeActivities: FC = () => {
       <div className='activities_content'>
         <div className='activities_content_image'>
           {Array.from({ length: 9 }).map((_, i) => (
-            <div className='activities_content_image_wrapper'>
+            <div className='activities_content_image_wrapper' key={i}>
               <img
                 width={350}
                 height={'100%'}
@@ -93,4 +95,4 @@ const HomeActivities: FC = () => {
   );
 };
 
-export default HomeActivities;
+export default memo(HomeActivities);

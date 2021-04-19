@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { memo, useState } from "react";
 import IconPlane from "src/assets/svg/IconPlane";
 import IconWhatsapp from "src/assets/svg/IconWhatsapp";
 import styled from "styled-components";
@@ -79,8 +80,13 @@ export const Plane = styled(IconPlane)`
 `;
 
 const HomeHeader: React.FC = () => {
+  console.log('home-header-render');
+
+  const [count, setCount] = useState(0);
+
   return (
     <HeaderStyled>
+      <h1>{count}</h1>
       <div className='heading'>
         <div className='heading_image'>
           <Image
@@ -100,7 +106,10 @@ const HomeHeader: React.FC = () => {
             </h2>
             <div className='btn-group'>
               <div className='_item'>
-                <Button width='13rem' height='4rem'>
+                <Button
+                  width='13rem'
+                  height='4rem'
+                  onClick={() => setCount(count + 1)}>
                   <Plane />
                   Daftar Sekarang
                 </Button>
@@ -125,4 +134,4 @@ const HomeHeader: React.FC = () => {
   );
 };
 
-export default HomeHeader;
+export default memo(HomeHeader);

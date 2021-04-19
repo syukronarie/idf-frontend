@@ -1,4 +1,4 @@
-import React from "react";
+import React, { memo } from "react";
 import styled from "styled-components";
 
 import { Plane } from "@home/HomeHeader";
@@ -64,6 +64,8 @@ const FooterDekstop: React.FC = () => {
   let date = new Date();
   let year = date.getFullYear();
 
+  console.log('footer-render');
+
   return (
     <FooterContainer>
       <div className='footer_heading'>
@@ -96,4 +98,4 @@ const FooterDekstop: React.FC = () => {
   );
 };
 
-export default FooterDekstop;
+export default memo(FooterDekstop);

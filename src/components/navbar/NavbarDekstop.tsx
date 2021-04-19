@@ -81,6 +81,8 @@ const Plane = styled(IconPlane)`
 `;
 
 const NavbarDekstop = () => {
+  console.log('navbar-render');
+
   return (
     <NavStyled>
       <nav className='dekstop'>
