@@ -28,41 +28,41 @@ function MyApp({ Component, pageProps }) {
         />
         <meta
           name='description'
-          content='Indonesia Dirgantara Flight (IDF) adalah Lembaga Pendidikan Staff Airlines dan Kepramugarian yang merupakan wujud peran serta tanggung jawab dalam usaha mencerdaskan kehidupan bangsa.'>
-          {/* <!-- Open Graph / Facebook --> */}
-          <meta property='og:type' content='website' />
-          <meta
-            property='og:url'
-            content='https://indonesiadirgantaraflight.or.id/'
-          />
-          <meta
-            property='og:title'
-            content='Indonesia Dirgantara Flight
+          content='Indonesia Dirgantara Flight (IDF) adalah Lembaga Pendidikan Staff Airlines dan Kepramugarian yang merupakan wujud peran serta tanggung jawab dalam usaha mencerdaskan kehidupan bangsa.'
+        />
+        {/* <!-- Open Graph / Facebook --> */}
+        <meta property='og:type' content='website' />
+        <meta
+          property='og:url'
+          content='https://indonesiadirgantaraflight.or.id/'
+        />
+        <meta
+          property='og:title'
+          content='Indonesia Dirgantara Flight
 — Lembaga Pendidikan Pramugari/Pramugara'
-          />
-          <meta
-            property='og:description'
-            content='Indonesia Dirgantara Flight (IDF) adalah Lembaga Pendidikan Staff Airlines dan Kepramugarian yang merupakan wujud peran serta tanggung jawab dalam usaha mencerdaskan kehidupan bangsa.'
-          />
-          <meta property='og:image' content='' />
+        />
+        <meta
+          property='og:description'
+          content='Indonesia Dirgantara Flight (IDF) adalah Lembaga Pendidikan Staff Airlines dan Kepramugarian yang merupakan wujud peran serta tanggung jawab dalam usaha mencerdaskan kehidupan bangsa.'
+        />
+        <meta property='og:image' content='' />
 
-          {/* <!-- Twitter --> */}
-          <meta property='twitter:card' content='summary_large_image' />
-          <meta
-            property='twitter:url'
-            content='https://indonesiadirgantaraflight.or.id/'
-          />
-          <meta
-            property='twitter:title'
-            content='Indonesia Dirgantara Flight
+        {/* <!-- Twitter --> */}
+        <meta property='twitter:card' content='summary_large_image' />
+        <meta
+          property='twitter:url'
+          content='https://indonesiadirgantaraflight.or.id/'
+        />
+        <meta
+          property='twitter:title'
+          content='Indonesia Dirgantara Flight
 — Lembaga Pendidikan Pramugari/Pramugara'
-          />
-          <meta
-            property='twitter:description'
-            content='Indonesia Dirgantara Flight (IDF) adalah Lembaga Pendidikan Staff Airlines dan Kepramugarian yang merupakan wujud peran serta tanggung jawab dalam usaha mencerdaskan kehidupan bangsa.'
-          />
-          <meta property='twitter:image' content='' />
-        </meta>
+        />
+        <meta
+          property='twitter:description'
+          content='Indonesia Dirgantara Flight (IDF) adalah Lembaga Pendidikan Staff Airlines dan Kepramugarian yang merupakan wujud peran serta tanggung jawab dalam usaha mencerdaskan kehidupan bangsa.'
+        />
+        <meta property='twitter:image' content='' />
       </Head>
       <GlobalStyles />
       <Component {...pageProps} />

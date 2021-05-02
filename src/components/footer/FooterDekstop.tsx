@@ -70,7 +70,7 @@ const FooterDekstop: React.FC = () => {
     <FooterContainer>
       <div className='footer_heading'>
         <h1 className='footer_heading_title'>
-          Apakah kamu siap dengan memulai petualangan belajarmu bersama kami?
+          Apakah kamu siap memulai petualangan belajarmu bersama kami?
         </h1>
       </div>
 
