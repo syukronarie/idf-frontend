@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import COLORS from "src/assets/styles/globalColors";
@@ -16,24 +17,24 @@ import styled from "styled-components";
 
 const menus = [
   {
-    link: '/',
-    name: 'Beranda'
+    link: "/",
+    name: "Beranda"
   },
   {
-    link: '/profile',
-    name: 'Profile'
+    link: "/profile",
+    name: "Profile"
   },
   {
-    link: '/register',
-    name: 'Pendaftaran Online'
+    link: "/register",
+    name: "Pendaftaran Online"
   },
   {
-    link: '/testimony',
-    name: 'Testimoni'
+    link: "/testimony",
+    name: "Testimoni"
   },
   {
-    link: '/contact',
-    name: 'Kontak kami'
+    link: "/contact",
+    name: "Kontak kami"
   }
 ];
 
@@ -81,15 +82,24 @@ const Plane = styled(IconPlane)`
 `;
 
 const NavbarDekstop = () => {
-  console.log('navbar-render');
+  console.log("navbar-render");
 
   return (
     <NavStyled>
-      <nav className='dekstop'>
-        <div className='leftSide'>
-          <h1>Logo</h1>
+      <nav className="dekstop">
+        <div className="leftSide">
+          <Link href="/">
+            <a href="/">
+              <Image
+                width="235px"
+                height="44px"
+                src="/img/logo-indonesia-dirgantara-flight.png"
+                alt="logo-indonesia-dirgantara-flight"
+              />
+            </a>
+          </Link>
         </div>
-        <div className='centerSide'>
+        <div className="centerSide">
           <ul>
             {menus.map((menu, i) => (
               <Link key={i} href={`${menu.link}`}>
@@ -100,11 +110,13 @@ const NavbarDekstop = () => {
             ))}
           </ul>
         </div>
-        <div className='rightSide'>
-          <button className='btn-register'>
-            <Plane />
-            Daftar Sekarang
-          </button>
+        <div className="rightSide">
+          <Link href="/register">
+            <button className="btn-register">
+              <Plane />
+              Daftar Sekarang
+            </button>
+          </Link>
         </div>
       </nav>
     </NavStyled>

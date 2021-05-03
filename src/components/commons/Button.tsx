@@ -15,6 +15,7 @@ type PropsComponents = {
   backgroundColorTwo?: string;
   children: ReactNode;
   component?: Component;
+  style?: React.CSSProperties;
   onClick?: MouseEventHandler<HTMLButtonElement>;
 };
 
@@ -38,12 +39,12 @@ const Button: React.FC<PropsComponents> = ({
   backgroundColorTwo,
   children,
   component,
+  style,
   onClick
 }) => {
-  console.log('button-render');
-
   return (
     <BtnStyled
+      style={style}
       fontSize={fontSize}
       color={color}
       width={width}
@@ -52,7 +53,9 @@ const Button: React.FC<PropsComponents> = ({
       backgroundColorOne={backgroundColorOne}
       backgroundColorTwo={backgroundColorTwo}>
       {component}
-      <button onClick={onClick}>{children}</button>
+      <button style={{}} onClick={onClick}>
+        {children}
+      </button>
     </BtnStyled>
   );
 };
@@ -68,9 +71,9 @@ const BtnStyled = styled.div<PropsStyled>`
         : COLORS.FUN_BLUE[500]};
     color: ${(props) => (props.color ? props.color : COLORS.MYSTIC[500])};
     font-size: ${GLOBAL_SIZING_FONTS.TEXT_SM};
-    width: ${(props) => (props.width ? props.width : 'auto')};
-    height: ${(props) => (props.height ? props.height : 'auto')};
-    border: ${(props) => (props.border ? props.border : '0')};
+    width: ${(props) => (props.width ? props.width : "auto")};
+    height: ${(props) => (props.height ? props.height : "auto")};
+    border: ${(props) => (props.border ? props.border : "0")};
     ${(props) =>
       props.fontSize ? props.fontSize : GLOBAL_SIZING_FONTS.TEXT_BASE};
     transition: 0.3s ease-in-out;

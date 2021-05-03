@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React, { memo } from "react";
 import styled from "styled-components";
 
@@ -17,7 +18,7 @@ const FooterContainer = styled.div`
   margin-top: 6rem;
 
   .footer_heading {
-    background-image: url('/img/map.jpg');
+    background-image: url("/img/map.jpg");
     width: 100%;
 
     &_title {
@@ -64,18 +65,18 @@ const FooterDekstop: React.FC = () => {
   let date = new Date();
   let year = date.getFullYear();
 
-  console.log('footer-render');
+  console.log("footer-render");
 
   return (
     <FooterContainer>
-      <div className='footer_heading'>
-        <h1 className='footer_heading_title'>
+      <div className="footer_heading">
+        <h1 className="footer_heading_title">
           Apakah kamu siap memulai petualangan belajarmu bersama kami?
         </h1>
       </div>
 
-      <div className='footer_content'>
-        <div className='footer_content_text'>
+      <div className="footer_content">
+        <div className="footer_content_text">
           <p>
             World-renowned aviation professionals create the Inflight
             Institute’s programs. <br /> We work with airlines from around the
@@ -86,11 +87,13 @@ const FooterDekstop: React.FC = () => {
             Crew training!
           </p>
         </div>
-        <Button width='13rem' height='4rem'>
-          <Plane />
-          Daftar Sekarang
-        </Button>
-        <div className='footer_content_copyright'>
+        <Link href="/register">
+          <Button width="13rem" height="4rem">
+            <Plane />
+            Daftar Sekarang
+          </Button>
+        </Link>
+        <div className="footer_content_copyright">
           <p>© Indonesia Dirgantara Flight {year}</p>
         </div>
       </div>

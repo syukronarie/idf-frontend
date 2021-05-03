@@ -153,14 +153,14 @@ const GlobalStyle = createGlobalStyle`
     }
 
 	::-webkit-scrollbar {
-		width: 16px;
-		height: 16px;
+    width: 14px;
+    height: 14px;
 	}
     
 	::-webkit-scrollbar-thumb {
-        border-radius: 40px; 
+        border-radius: 1px; 
         background-color: ${COLORS.FUN_BLUE[500]};
-        box-shadow: inset 2px 2px 2px hsl(0deg 0% 100% / 25%), inset -2px -2px 2px rgb(0 0 0 / 25%);
+        box-shadow: inset 0px 0.5px 1px hsl(0deg 0% 100% / 25%), inset 1px 1px 2px rgb(0 0 0 / 25%);
 	}
     
 	::-webkit-scrollbar-track {
