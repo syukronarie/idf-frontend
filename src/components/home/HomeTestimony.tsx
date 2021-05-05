@@ -15,7 +15,7 @@ const TestimonyStyled = styled.div`
   margin-top: 6rem;
 
   .testimony_heading {
-    background-image: url('/img/map.jpg');
+    background-image: url("/img/map.jpg");
     width: 100%;
 
     &_title {
@@ -89,69 +89,67 @@ const TestimonyStyled = styled.div`
 
 const TestimonyData = [
   {
-    id: '1',
-    name: 'Whitney Houston',
-    image: '/img/testimony/image1.jpg',
+    id: "1",
+    name: "Whitney Houston",
+    image: "/img/testimony/image1.jpg",
     text:
-      'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae hic asperiores expedita quae aliquam porro nobis! Quis cupiditate facilis deleniti!'
+      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae hic asperiores expedita quae aliquam porro nobis! Quis cupiditate facilis deleniti!"
   },
   {
-    id: '2',
-    name: 'Mariah Carey',
-    image: '/img/testimony/image2.jpg',
+    id: "2",
+    name: "Mariah Carey",
+    image: "/img/testimony/image2.jpg",
     text:
-      'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed odit at ea, quam eveniet alias explicabo sunt labore facilis fugit quae. Est nobis quidem fugiat!'
+      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed odit at ea, quam eveniet alias explicabo sunt labore facilis fugit quae. Est nobis quidem fugiat!"
   },
   {
-    id: '3',
-    name: 'Richard Marx',
-    image: '/img/testimony/image3.jpg',
+    id: "3",
+    name: "Richard Marx",
+    image: "/img/testimony/image3.jpg",
     text:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore ratione ut quisquam amet itaque ipsam rem assumenda? Sunt minima illo totam ut aliquid tenetur non amet recusandae. Illum, laborum nulla.'
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore ratione ut quisquam amet itaque ipsam rem assumenda? Sunt minima illo totam ut aliquid tenetur non amet recusandae. Illum, laborum nulla."
   },
   {
-    id: '4',
-    name: 'Celine Dion',
-    image: '/img/testimony/image4.jpg',
+    id: "4",
+    name: "Celine Dion",
+    image: "/img/testimony/image4.jpg",
     text:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum et eligendi fuga voluptates sit laudantium asperiores maiores similique quibusdam distinctio enim tempora, iste dolorem aliquam dolores dolorum.'
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum et eligendi fuga voluptates sit laudantium asperiores maiores similique quibusdam distinctio enim tempora, iste dolorem aliquam dolores dolorum."
   }
 ];
 
 const HomeTestimony: React.FC = () => {
-  console.log('home-testimony-render');
-
   return (
     <TestimonyStyled>
-      <div className='testimony_heading'>
-        <h1 className='testimony_heading_title'>What Our Graduates Say</h1>
-        <h2 className='testimony_heading_description'>
+      <div className="testimony_heading">
+        <h1 className="testimony_heading_title">What Our Graduates Say</h1>
+        <h2 className="testimony_heading_description">
           With over 85% confirmed placement - hear how some of our <br />
           students are doing today in their new flight careers.
         </h2>
       </div>
 
-      <div className='testimony_content'>
+      <div className="testimony_content">
         {TestimonyData.map((testimony) => (
-          <div className='testimony_content_square' key={testimony.id}>
-            <div className='testimony_content_square_image'>
+          <div className="testimony_content_square" key={testimony.id}>
+            <div className="testimony_content_square_image">
               <Image
                 width={400}
                 height={266}
                 src={testimony.image}
-                objectFit='cover'
+                objectFit="cover"
               />
             </div>
-            <div className='testimony_content_square_divider'>
-              <h4 className='testimony_content_square_divider_text'>
+            <div className="testimony_content_square_divider">
+              <h4 className="testimony_content_square_divider_text">
                 Testimony
               </h4>
             </div>
-            <div className='testimony_content_square_text'>
-              <h3 className='testimony_content_square_text_name'>
+            <div className="testimony_content_square_text">
+              <h3 className="testimony_content_square_text_name">
                 {testimony.name}
               </h3>
-              <p className='testimony_content_square_text_message'>
+              <p className="testimony_content_square_text_message">
                 {testimony.text}
               </p>
             </div>

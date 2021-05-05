@@ -67,24 +67,22 @@ const HomeActivitiesContainer = styled.div`
 `;
 
 const HomeActivities: FC = () => {
-  console.log('home-activities-render');
-
   return (
     <HomeActivitiesContainer>
-      <div className='activities_heading'>
-        <h1 className='activities_heading_title'>Our Class Activities</h1>
-        <h2 className='activities_heading_description'>
+      <div className="activities_heading">
+        <h1 className="activities_heading_title">Our Class Activities</h1>
+        <h2 className="activities_heading_description">
           Day by day on the Indonesia Dirgantara Flight
         </h2>
       </div>
 
-      <div className='activities_content'>
-        <div className='activities_content_image'>
+      <div className="activities_content">
+        <div className="activities_content_image">
           {Array.from({ length: 9 }).map((_, i) => (
-            <div className='activities_content_image_wrapper' key={i}>
+            <div className="activities_content_image_wrapper" key={i}>
               <img
                 width={350}
-                height={'100%'}
+                height={"100%"}
                 src={`/img/activities/image${i}.jpg`}
               />
             </div>

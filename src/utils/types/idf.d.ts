@@ -1,0 +1,23 @@
+export type RegisterTypes = {
+  fullName?: string;
+  address?: string;
+  rtRw?: string;
+  district?: string;
+  province?: string;
+  posCode?: string;
+  phoneNumber?: string;
+  birthOfPlace?: string;
+  birthOfDate?: string;
+  religion?: string;
+  gender?: string;
+  nameOfHighSchool?: string;
+  addressOfHighSchool?: string;
+  graduation?: string;
+  expertiseProgram?: string;
+  parentFullName?: string;
+  parentAdress?: string;
+  parentPhoneNumber?: string;
+  parentEducation?: string;
+  parentJob?: string;
+  registerDate?: Date;
+};

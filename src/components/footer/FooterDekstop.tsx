@@ -65,8 +65,6 @@ const FooterDekstop: React.FC = () => {
   let date = new Date();
   let year = date.getFullYear();
 
-  console.log("footer-render");
-
   return (
     <FooterContainer>
       <div className="footer_heading">

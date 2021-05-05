@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { memo, useState } from "react";
+import { memo } from "react";
 import IconPlane from "src/assets/svg/IconPlane";
 import IconWhatsapp from "src/assets/svg/IconWhatsapp";
 import styled from "styled-components";
@@ -23,9 +23,6 @@ const HeaderStyled = styled.div`
       z-index: -1;
       top: 6rem;
       object-fit: cover;
-
-      /* @media screen and (min-width: 1280px) {
-      } */
     }
 
     &_content {
@@ -81,13 +78,8 @@ export const Plane = styled(IconPlane)`
 `;
 
 const HomeHeader: React.FC = () => {
-  console.log("home-header-render");
-
-  const [count, setCount] = useState(0);
-
   return (
     <HeaderStyled>
-      <h1>{count}</h1>
       <div className="heading">
         <div className="heading_image">
           <Image
@@ -108,10 +100,7 @@ const HomeHeader: React.FC = () => {
             <div className="btn-group">
               <div className="_item">
                 <Link href="/register">
-                  <Button
-                    width="13rem"
-                    height="4rem"
-                    onClick={() => setCount(count + 1)}>
+                  <Button width="13rem" height="4rem">
                     <Plane />
                     Daftar Sekarang
                   </Button>

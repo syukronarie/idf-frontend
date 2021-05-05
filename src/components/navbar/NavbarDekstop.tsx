@@ -81,9 +81,7 @@ const Plane = styled(IconPlane)`
   margin-right: 1rem;
 `;
 
-const NavbarDekstop = () => {
-  console.log("navbar-render");
-
+const NavbarDekstop: React.FC = () => {
   return (
     <NavStyled>
       <nav className="dekstop">
