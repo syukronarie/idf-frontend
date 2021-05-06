@@ -90,31 +90,31 @@ const TestimonyStyled = styled.div`
 const TestimonyData = [
   {
     id: "1",
-    name: "Whitney Houston",
-    image: "/img/testimony/image1.jpg",
+    name: "Rere Effendy Gosnes",
+    image: "/img/testimony/image1.jpeg",
     text:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae hic asperiores expedita quae aliquam porro nobis! Quis cupiditate facilis deleniti!"
+      "Saya Rere Effendy Gosnes dari kota Bontang Kalimantan Timur.\n Saya alumni IDF 2017, jurusan STAF AIRLINES program kuliah 1 tahun.\n Saya bekerja di bandara Apt Pranoto Samarinda Kalimantan Timur di bagian Apron Movement Control.\n \n Saya berterima kasih kepada IDF Samarinda sebagai sarana belajar dan menimba ilmu.\n \n Selalu percaya diri dan semangat karena usaha selalu memberikan hasil yang memuaskan jika usaha itu ditekuni dengan sungguh-sungguh.\n SUKSES IDF Samarinda"
   },
   {
     id: "2",
-    name: "Mariah Carey",
-    image: "/img/testimony/image2.jpg",
+    name: "Sella",
+    image: "/img/testimony/image4.jpeg",
     text:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed odit at ea, quam eveniet alias explicabo sunt labore facilis fugit quae. Est nobis quidem fugiat!"
+      "Nama saya Sella, berasal dari kota Samarinda - Kalimantan Timur.\n Saya alumni IDF Angkatan 2017, jurusan STAF AIRLINES program kuliah 1 tahun.\n Saya bekerja di Batik Air bandara Apt Pranoto Samarinda.\n Tak ada yang sia - sia, semua bergantung dari usaha keras dan tak patah semangat.\n Belajarlah di IDF jika ingin kerja di dunia penerbangan.\n SUKSES IDF Samarinda."
   },
   {
     id: "3",
-    name: "Richard Marx",
-    image: "/img/testimony/image3.jpg",
+    name: "Haikal Rahmadani",
+    image: "/img/testimony/image3.jpeg",
     text:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore ratione ut quisquam amet itaque ipsam rem assumenda? Sunt minima illo totam ut aliquid tenetur non amet recusandae. Illum, laborum nulla."
+      "Saya Haikal Rahmadani, biasa dipanggil Haikal, asal kota dari Samarinda - Kalimantan Timur.\n Saya alumni IDF 2017, jurusan STAF AIRLINES, program kuliah 1 tahun..\n Saat ini saya bekerja di SN Cargo bandara Apt Pranoto, dan sempat juga bekerja di Sriwijaya Air selama 1 tahun..\n Saya ucapkan terimakasih tak terhingga kepada IDF karena telah menjembatani dan mempermudah saya dalam mencari pekerjaan di dunia penerbangan..\n SALAM SEMANGAT IDF Samarinda!"
   },
   {
     id: "4",
-    name: "Celine Dion",
-    image: "/img/testimony/image4.jpg",
+    name: "Madzullin Farida Adhan",
+    image: "/img/testimony/image2.jpeg",
     text:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum et eligendi fuga voluptates sit laudantium asperiores maiores similique quibusdam distinctio enim tempora, iste dolorem aliquam dolores dolorum."
+      "Nama saya Madzullin Farida Adhan, biasa dipanggil Ririn berasal dari kota Tenggarong - Kalimantan Timur.\n Saya alumni IDF Angkatan 2017, jurusan STAF AIRLINES program kuliah 1 tahun.\n Saya sekarang bekerja di Maskapai Lion Air Group Bandar Udara Sepinggan Balikpapan.\n “Jangan berhenti mengejar mimpimu, meskipun kamu punya semua alasan untuk menyerah. Jadilah generasi muda yang berani sukses di usia muda.“"
   }
 ];
 
@@ -122,10 +122,13 @@ const HomeTestimony: React.FC = () => {
   return (
     <TestimonyStyled>
       <div className="testimony_heading">
-        <h1 className="testimony_heading_title">What Our Graduates Say</h1>
+        <h1 className="testimony_heading_title">
+          Pendapat dari para Alumni IDF{" "}
+        </h1>
         <h2 className="testimony_heading_description">
-          With over 85% confirmed placement - hear how some of our <br />
-          students are doing today in their new flight careers.
+          Dengarkan beberapa dari alumni kami
+          <br /> apa yang mereka lakukan hari ini dalam karier penerbangan baru
+          mereka.
         </h2>
       </div>
 
@@ -135,14 +138,14 @@ const HomeTestimony: React.FC = () => {
             <div className="testimony_content_square_image">
               <Image
                 width={400}
-                height={266}
+                height={400}
                 src={testimony.image}
                 objectFit="cover"
               />
             </div>
             <div className="testimony_content_square_divider">
               <h4 className="testimony_content_square_divider_text">
-                Testimony
+                Alumni IDF
               </h4>
             </div>
             <div className="testimony_content_square_text">

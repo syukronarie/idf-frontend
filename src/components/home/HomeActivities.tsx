@@ -70,9 +70,9 @@ const HomeActivities: FC = () => {
   return (
     <HomeActivitiesContainer>
       <div className="activities_heading">
-        <h1 className="activities_heading_title">Our Class Activities</h1>
+        <h1 className="activities_heading_title">Aktifitas kami di IDF</h1>
         <h2 className="activities_heading_description">
-          Day by day on the Indonesia Dirgantara Flight
+          Kegiatan rutin yang ada di Indonesia Dirgantara Flight
         </h2>
       </div>
 

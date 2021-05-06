@@ -21,6 +21,8 @@ import COLORS from "@styles/globalColors";
 import GLOBAL_FLEX from "@styles/globalFlex";
 
 const Wrapper = styled.div`
+  padding-top: 8%;
+
   .form-wrapper {
     ${GLOBAL_FLEX.START}
     flex-direction: column;

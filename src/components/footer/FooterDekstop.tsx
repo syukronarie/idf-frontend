@@ -76,13 +76,14 @@ const FooterDekstop: React.FC = () => {
       <div className="footer_content">
         <div className="footer_content_text">
           <p>
-            World-renowned aviation professionals create the Inflight
-            Institute’s programs. <br /> We work with airlines from around the
-            world to provide world-class aviation training.
+            Para profesional penerbangan lulus dari IDF.
+            <br />
+            Kami bekerja dengan maskapai penerbangan untuk memberikan pelatihan
+            penerbangan terbaik.
           </p>
           <p>
-            No matter where you are on the planet, you can have access to Cabin
-            Crew training!
+            Di mana pun Anda berada, Anda dapat memiliki akses ke pelatihan
+            kami!
           </p>
         </div>
         <Link href="/register">

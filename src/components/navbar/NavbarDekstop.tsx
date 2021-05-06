@@ -1,11 +1,11 @@
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import COLORS from "src/assets/styles/globalColors";
 import GLOBAL_FLEX from "src/assets/styles/globalFlex";
 import GLOBAL_SIZING_FONTS from "src/assets/styles/globalSizingFonts";
 import IconPlane from "src/assets/svg/IconPlane";
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 /**
  * TODO: CREATING NAVBAR DEKSTOP
@@ -28,22 +28,36 @@ const menus = [
     link: "/register",
     name: "Pendaftaran Online"
   },
-  {
-    link: "/testimony",
-    name: "Testimoni"
-  },
+  // {
+  //   link: "/testimony",
+  //   name: "Testimoni"
+  // },
   {
     link: "/contact",
     name: "Kontak kami"
   }
 ];
 
-const NavStyled = styled.div`
+type PropsNavbarStyle = {
+  shadow: boolean;
+};
+
+const NavStyled = styled.div<PropsNavbarStyle>`
+  position: fixed;
+  top: 0;
   display: flex;
   align-items: center;
+  width: 100%;
   background-color: ${COLORS.MYSTIC[100]};
-  position: relative;
-  z-index: 1;
+  z-index: 3;
+
+  ${(props) =>
+    props.shadow
+      ? css`
+          transition: 0.3s ease-in-out;
+          box-shadow: #0000001a 1px 3px 10px 0px;
+        `
+      : ""}
 
   .dekstop {
     display: flex;
@@ -82,8 +96,21 @@ const Plane = styled(IconPlane)`
 `;
 
 const NavbarDekstop: React.FC = () => {
+  const [shadowNavbar, setShadowNavbar] = useState(false);
+
+  const handleScroll = () => {
+    window.pageYOffset > 60 ? setShadowNavbar(true) : setShadowNavbar(false);
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  });
+
   return (
-    <NavStyled>
+    <NavStyled shadow={shadowNavbar}>
       <nav className="dekstop">
         <div className="leftSide">
           <Link href="/">
