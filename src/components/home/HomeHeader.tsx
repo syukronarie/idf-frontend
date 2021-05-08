@@ -48,7 +48,7 @@ const HeaderStyled = styled.div`
 
     &_description {
       font-weight: 500;
-      ${GLOBAL_SIZING_FONTS.TEXT_5XL}
+      ${GLOBAL_SIZING_FONTS.TEXT_4XL}
     }
   }
 
@@ -95,8 +95,12 @@ const HomeHeader: React.FC = () => {
           <div className="heading_content_wrapper">
             <h1 className="heading_title">Indonesia Dirgantara Flight</h1>
             <h2 className="heading_description">
-              Lembaga Pendidikan Pramugari/Pramugara
+              Lembaga Pendidikan Pramugari/Pramugara dan Staf Penerbangan
             </h2>
+            <h2 className="heading_description">
+              (IDF Samarinda - Kalimantan Timur)
+            </h2>
+
             <div className="btn-group">
               <div className="_item">
                 <Link href="/register">

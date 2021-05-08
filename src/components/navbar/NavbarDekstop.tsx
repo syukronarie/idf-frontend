@@ -28,10 +28,10 @@ const menus = [
     link: "/register",
     name: "Pendaftaran Online"
   },
-  // {
-  //   link: "/testimony",
-  //   name: "Testimoni"
-  // },
+  {
+    link: "/testimony",
+    name: "Testimoni"
+  },
   {
     link: "/contact",
     name: "Kontak kami"

@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { FC, memo } from "react";
 import styled from "styled-components";
 
@@ -6,6 +7,8 @@ import COLORS from "@styles/globalColors";
 import GLOBAL_FLEX from "@styles/globalFlex";
 import GLOBAL_SIZING_FONTS from "@styles/globalSizingFonts";
 import GLOBAL_SIZINGS from "@styles/globalSizings";
+
+import Button from "../commons/Button";
 
 const HomeActivitiesContainer = styled.div`
   ${GLOBAL_FLEX.CENTER}
@@ -38,11 +41,13 @@ const HomeActivitiesContainer = styled.div`
 
   .activities_content {
     ${GLOBAL_FLEX.CENTER}
+    flex-direction:column;
+    width: 100%;
 
     &_image {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      width: 1200px;
+      width: 95%;
       margin: auto;
 
       &_wrapper {
@@ -52,6 +57,7 @@ const HomeActivitiesContainer = styled.div`
         border-bottom: solid 3px ${COLORS.FUN_BLUE[500]};
         padding: 30px 0 0;
         margin: 0 25px;
+        width: 90%;
       }
 
       img {
@@ -78,16 +84,19 @@ const HomeActivities: FC = () => {
 
       <div className="activities_content">
         <div className="activities_content_image">
-          {Array.from({ length: 9 }).map((_, i) => (
+          {Array.from({ length: 6 }).map((_, i) => (
             <div className="activities_content_image_wrapper" key={i}>
               <img
-                width={350}
+                width={"100%"}
                 height={"100%"}
-                src={`/img/activities/image${i}.jpg`}
+                src={`/img/kegiatan-siswa/image${i}.jpeg`}
               />
             </div>
           ))}
         </div>
+        <Link href="testimony">
+          <Button style={{ paddingTop: "5%" }}>Lihat lebih banyak ..</Button>
+        </Link>
       </div>
     </HomeActivitiesContainer>
   );

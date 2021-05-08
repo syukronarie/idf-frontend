@@ -4,14 +4,11 @@ export type RegisterTypes = {
   rtRw?: string;
   district?: string;
   province?: string;
-  posCode?: string;
   phoneNumber?: string;
   birthOfPlace?: string;
   birthOfDate?: string;
-  religion?: string;
   gender?: string;
   nameOfHighSchool?: string;
-  addressOfHighSchool?: string;
   graduation?: string;
   expertiseProgram?: string;
   parentFullName?: string;

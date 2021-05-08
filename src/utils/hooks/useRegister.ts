@@ -23,14 +23,11 @@ type StudentRegisterGoogleSheetType = {
   RT_RW: string;
   KABUPATEN: string;
   PROVINSI: string;
-  KODE_POS: string;
   NO_HP: string;
   TEMPAT_LAHIR: string;
   TANGGAL_LAHIR: string;
-  AGAMA: string;
   JENIS_KELAMIN: string;
   NAMA_SMA_SMK_ASAL: string;
-  ALAMAT_SMA_SMK_ASAL: string;
   LULUSAN_TAHUN: string;
   PROGRAM_KEAHLIAN_PROFESI_1_TAHUN: string;
   NAMA_ORANG_TUA: string;
@@ -48,14 +45,11 @@ const initialState: State = {
     rtRw: "",
     district: "",
     province: "",
-    posCode: "",
     phoneNumber: "",
     birthOfPlace: "",
     birthOfDate: "",
-    religion: "",
     gender: "",
     nameOfHighSchool: "",
-    addressOfHighSchool: "",
     graduation: "",
     parentFullName: "",
     parentAdress: "",
@@ -100,14 +94,11 @@ const asyncDispatch = (
         rtRw,
         district,
         province,
-        posCode,
         phoneNumber,
         birthOfPlace,
         birthOfDate,
-        religion,
         gender,
         nameOfHighSchool,
-        addressOfHighSchool,
         graduation,
         parentFullName,
         parentAdress,
@@ -143,14 +134,11 @@ const asyncDispatch = (
         RT_RW: rtRw,
         KABUPATEN: district,
         PROVINSI: province,
-        KODE_POS: posCode,
         NO_HP: phoneNumber,
         TEMPAT_LAHIR: birthOfPlace,
         TANGGAL_LAHIR: birthOfDate,
-        AGAMA: religion,
         JENIS_KELAMIN: gender,
         NAMA_SMA_SMK_ASAL: nameOfHighSchool,
-        ALAMAT_SMA_SMK_ASAL: addressOfHighSchool,
         LULUSAN_TAHUN: graduation,
         PROGRAM_KEAHLIAN_PROFESI_1_TAHUN: expertiseProgram,
         NAMA_ORANG_TUA: parentFullName,
