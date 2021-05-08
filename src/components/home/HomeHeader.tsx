@@ -1,81 +1,11 @@
 import Image from "next/image";
 import Link from "next/link";
-import { memo } from "react";
-import IconPlane from "src/assets/svg/IconPlane";
-import IconWhatsapp from "src/assets/svg/IconWhatsapp";
-import styled from "styled-components";
+import React, { memo } from "react";
 
 import COLORS from "@styles/globalColors";
-import GLOBAL_FLEX from "@styles/globalFlex";
-import GLOBAL_SIZING_FONTS from "@styles/globalSizingFonts";
 
 import Button from "../commons/Button";
-
-const HeaderStyled = styled.div`
-  .heading {
-    ${GLOBAL_FLEX.START};
-    flex-direction: column;
-    height: 30rem;
-
-    &_image {
-      position: relative;
-      width: 100%;
-      z-index: -1;
-      top: 6rem;
-      object-fit: cover;
-    }
-
-    &_content {
-      position: absolute;
-      top: 0;
-      width: 100%;
-      margin: auto;
-
-      &_wrapper {
-        ${GLOBAL_FLEX.START};
-        flex-flow: column;
-        padding-left: 10%;
-        padding-top: 13%;
-        color: ${COLORS.MYSTIC[200]};
-      }
-    }
-
-    &_title {
-      margin-top: 6rem;
-      font-weight: 500;
-      ${GLOBAL_SIZING_FONTS.TEXT_5XL};
-    }
-
-    &_description {
-      font-weight: 500;
-      ${GLOBAL_SIZING_FONTS.TEXT_4XL}
-    }
-  }
-
-  .btn-group {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: row;
-    margin: 2rem 0;
-
-    ._item {
-      padding-right: 20px;
-      ${GLOBAL_FLEX.CENTER};
-    }
-  }
-`;
-
-const Whatsapp = styled(IconWhatsapp)`
-  height: 1.5rem;
-  width: 2rem;
-  margin-right: 0.5rem;
-`;
-
-export const Plane = styled(IconPlane)`
-  font-size: 1.5rem;
-  margin-right: 1rem;
-`;
+import { HeaderStyled, Plane, Whatsapp } from "./HomeStyled";
 
 const HomeHeader: React.FC = () => {
   return (

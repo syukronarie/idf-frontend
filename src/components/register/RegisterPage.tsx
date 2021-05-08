@@ -4,10 +4,8 @@ import Button from "src/components/commons/Button";
 import REGISTER_CONSTANT from "src/utils/constants/RegisterConstant";
 import useRegister from "src/utils/hooks/useRegister";
 import { RegisterTypes } from "src/utils/types/idf";
-import styled from "styled-components";
 
 import {
- Button as ButtonMUI,
  Container,
  FormControl,
  Grid,
@@ -17,43 +15,8 @@ import {
  TextField
 } from "@material-ui/core";
 import NavbarDekstop from "@navbar/NavbarDekstop";
-import COLORS from "@styles/globalColors";
-import GLOBAL_FLEX from "@styles/globalFlex";
 
-const Wrapper = styled.div`
-  padding-top: 8%;
-
-  .form-wrapper {
-    ${GLOBAL_FLEX.START}
-    flex-direction: column;
-
-    &__form {
-      width: 100%;
-      background-color: ${COLORS.MYSTIC[100]};
-      margin: 2% 0%;
-
-      .register-title {
-        text-align: center;
-        font-size: 35px;
-        padding-top: 10%;
-        color: ${COLORS.FUN_BLUE[500]};
-      }
-
-      p,
-      li {
-        line-height: 25px;
-      }
-
-      b {
-        font-weight: 650;
-      }
-    }
-  }
-
-  .upload-foto {
-    display: none;
-  }
-`;
+import { RegisterStyled } from "./RegisterStyled";
 
 const RegisterPage: React.FC = () => {
   const [studentRegister, setStudentRegister] = React.useState<RegisterTypes>();
@@ -89,7 +52,7 @@ const RegisterPage: React.FC = () => {
   return (
     <>
       <NavbarDekstop />
-      <Wrapper>
+      <RegisterStyled>
         <Container maxWidth="lg">
           <div className="form-wrapper__form">
             <Grid
@@ -513,7 +476,7 @@ const RegisterPage: React.FC = () => {
             </Grid>
           </div>
         </Container>
-      </Wrapper>
+      </RegisterStyled>
     </>
   );
 };

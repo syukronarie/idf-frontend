@@ -3,6 +3,7 @@ import React from "react";
 import { Grid } from "@material-ui/core";
 import NavbarDekstop from "@navbar/NavbarDekstop";
 
+import FooterDekstop from "../footer/FooterDekstop";
 import { Wrapper } from "./TestimonyStyled";
 
 const TestimonyPage: React.FC = () => {
@@ -32,6 +33,7 @@ const TestimonyPage: React.FC = () => {
           {/* </Grid> */}
         </Grid>
       </Grid>
+      <FooterDekstop />
     </Wrapper>
   );
 };
