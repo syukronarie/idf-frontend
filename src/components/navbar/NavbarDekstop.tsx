@@ -27,7 +27,7 @@ const menus = [
   },
   {
     link: "/testimony",
-    name: "Testimoni"
+    name: "Kegiatan"
   },
   {
     link: "/contact",
