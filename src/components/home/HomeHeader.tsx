@@ -5,9 +5,16 @@ import React, { memo } from "react";
 import COLORS from "@styles/globalColors";
 
 import Button from "../commons/Button";
+import { idfNumber } from "../contact/ContactPage";
 import { HeaderStyled, Plane, Whatsapp } from "./HomeStyled";
 
 const HomeHeader: React.FC = () => {
+  const handleContactMe = () => {
+    window.open(
+      `https://api.whatsapp.com/send?phone=${idfNumber}&text=Halo,%0ASaya%20mau%20bertanya%0Atentang%20IDF..%0A%0A`
+    );
+  };
+
   return (
     <HeaderStyled>
       <div className="heading">
@@ -47,7 +54,8 @@ const HomeHeader: React.FC = () => {
                   border={`1px solid ${COLORS.MYSTIC[200]}`}
                   backgroundColorOne={"#fdfdfe59"}
                   backgroundColorTwo={"#fdfdfe40"}
-                  color={`${COLORS.MYSTIC[300]}`}>
+                  color={`${COLORS.MYSTIC[300]}`}
+                  onClick={handleContactMe}>
                   <Whatsapp />
                   Hubungi Kami
                 </Button>

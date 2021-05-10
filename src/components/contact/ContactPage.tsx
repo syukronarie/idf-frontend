@@ -9,14 +9,14 @@ import Button from "../commons/Button";
 import FooterDekstop from "../footer/FooterDekstop";
 import { Alert, ContactStyled } from "./ContactStyled";
 
+export const idfNumber = "628112952047";
+
 const ContactPage: React.FC = () => {
   const [name, setName] = React.useState("");
   const [message, setMessage] = React.useState("");
   const [email, setEmail] = React.useState("");
   const [phoneNumber, setPhoneNumber] = React.useState("");
   const [errorMessage, setErrorMessage] = React.useState("");
-
-  const idfNumber = "6285715555899";
 
   const handleMessage = () => {
     if (name && message && email && phoneNumber) {
@@ -112,12 +112,7 @@ const ContactPage: React.FC = () => {
                       variant="outlined"
                       fullWidth
                       required
-                      // onChange={(e) =>
-                      // setStudentRegister({
-                      //   ...studentRegister,
-                      //   fullName: e.target.value
-                      // })
-                      // }
+                      onChange={(e) => setName(e.target.value)}
                     />
                   </Grid>
 
@@ -129,12 +124,7 @@ const ContactPage: React.FC = () => {
                       variant="outlined"
                       fullWidth
                       required
-                      // onChange={(e) =>
-                      // setStudentRegister({
-                      //   ...studentRegister,
-                      //   fullName: e.target.value
-                      // })
-                      // }
+                      onChange={(e) => setPhoneNumber(e.target.value)}
                     />
                   </Grid>
 
@@ -146,12 +136,8 @@ const ContactPage: React.FC = () => {
                       variant="outlined"
                       fullWidth
                       required
-                      // onChange={(e) =>
-                      // setStudentRegister({
-                      //   ...studentRegister,
-                      //   fullName: e.target.value
-                      // })
-                      // }
+                      type="email"
+                      onChange={(e) => setEmail(e.target.value)}
                     />
                   </Grid>
 
@@ -165,12 +151,7 @@ const ContactPage: React.FC = () => {
                       multiline
                       fullWidth
                       required
-                      // onChange={(e) =>
-                      // setStudentRegister({
-                      //   ...studentRegister,
-                      //   fullName: e.target.value
-                      // })
-                      // }
+                      onChange={(e) => setMessage(e.target.value)}
                     />
                   </Grid>
 
@@ -196,14 +177,14 @@ const ContactPage: React.FC = () => {
             <div className="contact-content_three_left">
               <h3 className="contact-content_one_text_title">Email</h3>
               <p className="contact-content_one_text_description">
-                indonesiadirgantaraflight@mail.com
+                idfsamarinda01@gmail.com
               </p>
             </div>
 
             <div className="contact-content_three_right">
               <h3 className="contact-content_one_text_title">No Telepon</h3>
               <p className="contact-content_one_text_description">
-                085715555899
+                08112952047
               </p>
             </div>
           </div>
