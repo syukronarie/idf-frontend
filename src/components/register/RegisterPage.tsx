@@ -44,11 +44,6 @@ const RegisterPage: React.FC = () => {
     router.push("/");
   };
 
-  // Handle Register
-  // React.useEffect(() => {
-  //   handleRegister()
-  // }, []);
-
   return (
     <>
       <NavbarDekstop />
@@ -252,7 +247,27 @@ const RegisterPage: React.FC = () => {
               </Grid> */}
 
               <Grid item xs={12} sm={7}>
-                <TextField
+                <FormControl fullWidth>
+                  <InputLabel id="Jenis Kelamin">Jenis Kelamin</InputLabel>
+                  <Select
+                    labelId="Jenis Kelamin"
+                    id="Jenis Kelamin"
+                    required
+                    value={
+                      studentRegister?.gender ? studentRegister.gender : ""
+                    }
+                    onChange={(e) =>
+                      setStudentRegister({
+                        ...studentRegister,
+                        gender: e.target.value.toString()
+                      })
+                    }
+                    label="Program Keahlian Profesi 1 Tahun">
+                    <MenuItem value="Laki - laki">Laki - laki</MenuItem>
+                    <MenuItem value="Perempuan">Perempuan</MenuItem>
+                  </Select>
+                </FormControl>
+                {/* <TextField
                   autoComplete="off"
                   id="outlined-basic"
                   label="Jenis Kelamin"
@@ -265,7 +280,7 @@ const RegisterPage: React.FC = () => {
                       gender: e.target.value
                     })
                   }
-                />
+                /> */}
               </Grid>
 
               <Grid item xs={12} sm={7}>
@@ -327,18 +342,18 @@ const RegisterPage: React.FC = () => {
 
               <Grid item xs={12} sm={7}>
                 <FormControl fullWidth>
-                  <InputLabel id="demo-simple-select-outlined-label">
+                  <InputLabel id="Program Keahlian Profesi 1 Tahun">
                     Program Keahlian Profesi 1 Tahun :
                   </InputLabel>
                   <Select
-                    labelId="demo-simple-select-outlined-label"
-                    id="demo-simple-select-outlined"
+                    labelId="Program Keahlian Profesi 1 Tahun"
+                    id="Program Keahlian Profesi 1 Tahun"
+                    required
                     value={
                       studentRegister?.expertiseProgram
                         ? studentRegister.expertiseProgram
                         : ""
                     }
-                    // onChange={handleChange}
                     onChange={(e) =>
                       setStudentRegister({
                         ...studentRegister,
