@@ -22,15 +22,27 @@ export const HomeActivitiesContainer = styled.div`
     background-color: ${COLORS.MYSTIC[100]};
     height: auto;
 
+    ${media.mobileS} {
+      line-height: 1rem;
+    }
+
+    ${media.mobileM} {
+      line-height: 1.7rem;
+    }
+
+    ${media.tabletM} {
+      line-height: 1.5rem;
+    }
+
     &_title {
-      ${GLOBAL_SIZING_FONTS.TEXT_2XL}
+      font-size: clamp(14px, -0.875rem + 8.333333vw, 20px);
       color: ${COLORS.FUN_BLUE[500]};
       text-align: center;
       padding-top: ${GLOBAL_SIZINGS.xl5};
     }
 
     &_description {
-      ${GLOBAL_SIZING_FONTS.TEXT_BASE}
+      font-size: clamp(12px, -0.875rem + 8.333333vw, 18px);
       color: ${COLORS.FUN_BLUE[500]};
       text-align: center;
       padding-bottom: ${GLOBAL_SIZINGS.xl5};
@@ -44,9 +56,20 @@ export const HomeActivitiesContainer = styled.div`
 
     &_image {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
       width: 95%;
       margin: auto;
+
+      ${media.mobileS} {
+        grid-template-columns: repeat(1, 1fr);
+      }
+
+      ${media.tabletM} {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      ${media.tabletL} {
+        grid-template-columns: repeat(3, 1fr);
+      }
 
       &_wrapper {
         display: flex;

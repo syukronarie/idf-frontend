@@ -10,7 +10,7 @@ const HomePage: React.FC = () => {
       <NavbarDekstop />
       <HomeHeader />
       <HomeTestimony />
-      {/* <HomeActivities /> */}
+      <HomeActivities />
       <FooterDekstop />
     </div>
   );
