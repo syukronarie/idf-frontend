@@ -6,13 +6,13 @@ import useRegister from "src/utils/hooks/useRegister";
 import { RegisterTypes } from "src/utils/types/idf";
 
 import {
- Container,
- FormControl,
- Grid,
- InputLabel,
- MenuItem,
- Select,
- TextField
+  Container,
+  FormControl,
+  Grid,
+  InputLabel,
+  MenuItem,
+  Select,
+  TextField
 } from "@material-ui/core";
 import NavbarDekstop from "@navbar/NavbarDekstop";
 
@@ -57,7 +57,7 @@ const RegisterPage: React.FC = () => {
               alignItems="center"
               spacing={3}>
               <Grid item xs={12} sm={7}>
-                <p className="register-title">Pendaftaran Online</p>
+                <h1 className="register-title">Pendaftaran Online</h1>
               </Grid>
 
               <Grid item xs={12} sm={7}>
