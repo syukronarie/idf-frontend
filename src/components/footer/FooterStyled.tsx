@@ -1,8 +1,8 @@
+import media from "src/utils/constants/DeviceConstant";
 import styled from "styled-components";
 
 import COLORS from "@styles/globalColors";
 import GLOBAL_FLEX from "@styles/globalFlex";
-import GLOBAL_SIZING_FONTS from "@styles/globalSizingFonts";
 import GLOBAL_SIZINGS from "@styles/globalSizings";
 
 export const FooterContainer = styled.div`
@@ -12,12 +12,24 @@ export const FooterContainer = styled.div`
   background-color: #dddddd;
   margin-top: 6rem;
 
+  ${media.mobileS} {
+    line-height: 1rem;
+  }
+
+  ${media.mobileM} {
+    line-height: 1.7rem;
+  }
+
+  ${media.tabletM} {
+    line-height: 1.5rem;
+  }
+
   .footer_heading {
     background-image: url("/img/map.jpg");
     width: 100%;
 
     &_title {
-      ${GLOBAL_SIZING_FONTS.TEXT_2XL}
+      font-size: clamp(1rem, -0.875rem + 8.333333vw, 1.5rem);
       color: white;
       text-align: center;
       padding: ${GLOBAL_SIZINGS.xl7};
@@ -41,7 +53,7 @@ export const FooterContainer = styled.div`
       p {
         text-align: center;
         padding: 10px;
-        ${GLOBAL_SIZING_FONTS.TEXT_2XL}
+        font-size: clamp(1rem, -0.875rem + 8.333333vw, 1.5rem);
       }
     }
 

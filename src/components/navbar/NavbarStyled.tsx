@@ -64,6 +64,8 @@ export const NavStyled = styled.div<PropsNavbarStyle>`
   }
 
   .centerSide {
+    font-size: 1.15rem;
+
     ${media.mobileS} {
       display: none;
     }

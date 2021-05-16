@@ -166,7 +166,7 @@ export const HeaderStyled = styled.div`
 
         ${media.tabletL} {
           padding-left: 10%;
-          padding-top: 8rem;
+          padding-top: 6rem;
           justify-content: center;
           align-items: flex-start;
         }
