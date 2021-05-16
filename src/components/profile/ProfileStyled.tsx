@@ -1,3 +1,4 @@
+import media from "src/utils/constants/DeviceConstant";
 import styled from "styled-components";
 
 import COLORS from "@styles/globalColors";
@@ -18,10 +19,42 @@ export const ProfileStyled = styled.div`
       width: 100%;
       position: relative;
 
+      ${media.mobileS} {
+        height: 19.5rem;
+      }
+
+      ${media.tabletM} {
+        height: 30rem;
+      }
+
+      ${media.desktop} {
+        height: 31rem;
+      }
+
       &_image {
         position: relative;
         z-index: -1;
         object-fit: cover;
+
+        div:nth-child(1) {
+          ${media.mobileS} {
+            height: 14rem;
+            top: 65px;
+          }
+
+          ${media.mobileM} {
+            height: 14rem;
+          }
+
+          ${media.tabletM} {
+            height: 30rem;
+            top: 0;
+          }
+
+          ${media.desktop} {
+            height: 76rem;
+          }
+        }
       }
 
       &_text {
@@ -29,16 +62,47 @@ export const ProfileStyled = styled.div`
         flex-direction: column;
         ${GLOBAL_FLEX.START};
         top: 0;
-        margin: 9rem;
         color: ${COLORS.MYSTIC[100]};
 
         &_title {
-          ${GLOBAL_SIZING_FONTS.TEXT_4XL}
+          margin-left: 10px;
+          margin-right: 10px;
+          font-size: clamp(1.1rem, -0.875rem + 8.333333vw, 2.5rem);
         }
 
         &_description {
           margin-top: 1rem;
-          ${GLOBAL_SIZING_FONTS.TEXT_2XL}
+          margin-left: 10px;
+          margin-right: 10px;
+          font-size: clamp(1rem, -0.875rem + 8.333333vw, 1.2rem);
+        }
+
+        ${media.mobileS} {
+          margin-top: 7.5rem;
+          line-height: 1.3rem;
+          text-align: center;
+          align-items: center;
+        }
+
+        ${media.mobileM} {
+          line-height: 1.8rem;
+        }
+
+        ${media.tabletM} {
+          margin-top: 12rem;
+          line-height: 3rem;
+        }
+
+        ${media.tabletL} {
+          margin-top: 12rem;
+          align-items: flex-start;
+          text-align: left;
+
+          &_title,
+          &_description {
+            margin-left: 150px;
+            margin-right: 150px;
+          }
         }
       }
     }
@@ -47,6 +111,7 @@ export const ProfileStyled = styled.div`
     &_three {
       ${GLOBAL_FLEX.CENTER};
       width: 100%;
+      background-color: #dddddd;
 
       &_vision,
       &_goals {
@@ -54,25 +119,33 @@ export const ProfileStyled = styled.div`
         margin-right: 0%;
         margin-bottom: 0%;
         margin-left: 0%;
-        width: 80%;
         background-color: ${COLORS.MYSTIC[100]};
         border-bottom: solid 3px ${COLORS.FUN_BLUE[500]};
+
+        ${media.mobileS} {
+          width: 95%;
+        }
+
+        ${media.tabletM} {
+          width: 80%;
+        }
 
         &_content {
           ${GLOBAL_FLEX.CENTER}
           flex-direction: column;
+          padding-bottom: 7%;
 
           h3 {
-            font-size: 20px;
+            font-size: clamp(14px, -0.875rem + 8.333333vw, 20px);
             font-weight: 600;
-            margin-top: 4%;
+            margin-top: 10%;
             margin-right: 0px;
             margin-bottom: 3%;
             margin-left: 0px;
           }
 
           h4 {
-            font-size: 18px;
+            font-size: clamp(12px, -0.875rem + 8.333333vw, 18px);
             font-weight: 600;
             margin: 1rem;
           }
@@ -96,6 +169,7 @@ export const ProfileStyled = styled.div`
       &_goals {
         &_content {
           ${GLOBAL_FLEX.START}
+          padding-bottom: 7%;
 
           h3 {
             align-self: center;
