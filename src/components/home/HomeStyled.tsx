@@ -261,15 +261,27 @@ export const TestimonyStyled = styled.div`
     background-image: url("/img/map.jpg");
     width: 100%;
 
+    ${media.mobileS} {
+      line-height: 1rem;
+    }
+
+    ${media.mobileM} {
+      line-height: 1.7rem;
+    }
+
+    ${media.tabletM} {
+      line-height: 1.5rem;
+    }
+
     &_title {
-      ${GLOBAL_SIZING_FONTS.TEXT_2XL}
+      font-size: clamp(14px, -0.875rem + 8.333333vw, 20px);
       color: white;
       text-align: center;
       padding-top: ${GLOBAL_SIZINGS.xl3};
     }
 
     &_description {
-      ${GLOBAL_SIZING_FONTS.TEXT_BASE}
+      font-size: clamp(12px, -0.875rem + 8.333333vw, 18px);
       text-align: center;
       color: ${COLORS.FUN_BLUE[200]};
       padding-top: 10px;
