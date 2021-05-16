@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 import { Grid } from "@material-ui/core";
@@ -21,6 +22,9 @@ const TestimonyPage: React.FC = () => {
             {/* <Grid item> */}
             {Array.from({ length: 25 }).map((_, i: number) => (
               <div className="masonryItem" key={i}>
+                {/* <Image
+                  width="345"
+                  height="460" */}
                 <img
                   className="masonryImage"
                   src={`/img/testimoni-page/image${i}.jpeg`}
@@ -29,8 +33,6 @@ const TestimonyPage: React.FC = () => {
               </div>
             ))}
           </div>
-
-          {/* </Grid> */}
         </Grid>
       </Grid>
       <FooterDekstop />

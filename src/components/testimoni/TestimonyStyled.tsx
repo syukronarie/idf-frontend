@@ -2,7 +2,6 @@ import media from "src/utils/constants/DeviceConstant";
 import styled from "styled-components";
 
 import COLORS from "@styles/globalColors";
-import GLOBAL_SIZING_FONTS from "@styles/globalSizingFonts";
 
 export const Wrapper = styled.div`
   ${media.mobileS} {
@@ -19,7 +18,7 @@ export const Wrapper = styled.div`
   }
 
   ${media.tabletL} {
-    padding-top: 10rem;
+    padding-top: 7rem;
   }
 
   .heading-title {

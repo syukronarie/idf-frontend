@@ -3,7 +3,6 @@ import styled from "styled-components";
 
 import COLORS from "@styles/globalColors";
 import GLOBAL_FLEX from "@styles/globalFlex";
-import GLOBAL_SIZING_FONTS from "@styles/globalSizingFonts";
 
 export const ProfileStyled = styled.div`
   ${GLOBAL_FLEX.CENTER}

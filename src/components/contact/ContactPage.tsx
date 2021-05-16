@@ -120,7 +120,7 @@ const ContactPage: React.FC = () => {
                     <TextField
                       autoComplete="off"
                       id="outlined-basic"
-                      label="No handphone yang dapat dihubungi?"
+                      label="No HP/WA yang bisa dihubungi?"
                       variant="outlined"
                       fullWidth
                       required
@@ -163,8 +163,8 @@ const ContactPage: React.FC = () => {
                         marginTop: "1%",
                         marginBottom: "6%"
                       }}
-                      onClick={handleMessage}
-                      width="30%">
+                      width="30%"
+                      onClick={handleMessage}>
                       Kirim
                     </Button>
                   </Grid>

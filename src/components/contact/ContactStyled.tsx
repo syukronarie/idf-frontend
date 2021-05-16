@@ -1,3 +1,4 @@
+import media from "src/utils/constants/DeviceConstant";
 import styled from "styled-components";
 
 import { Alert as AlertStyled } from "@material-ui/lab";
@@ -9,6 +10,23 @@ export const ContactStyled = styled.div`
   ${GLOBAL_FLEX.CENTER}
   flex-direction: column;
 
+  ${media.mobileS} {
+    .MuiContainer-root {
+      padding-left: 15px;
+      padding-right: 0px;
+    }
+
+    .MuiGrid-spacing-xs-3 > .MuiGrid-item {
+      padding: 10px 20px;
+    }
+
+    h3,
+    p,
+    ul > li {
+      padding-left: 15px;
+    }
+  }
+
   .contact-content {
     ${GLOBAL_FLEX.START};
     flex-direction: column;
@@ -18,10 +36,42 @@ export const ContactStyled = styled.div`
       width: 100%;
       position: relative;
 
+      ${media.mobileS} {
+        height: 19.5rem;
+      }
+
+      ${media.tabletM} {
+        height: 30rem;
+      }
+
+      ${media.desktop} {
+        height: 31rem;
+      }
+
       &_image {
         position: relative;
         z-index: -1;
         object-fit: cover;
+
+        div:nth-child(1) {
+          ${media.mobileS} {
+            height: 29rem;
+            top: 65px;
+          }
+
+          ${media.mobileM} {
+            height: 39rem;
+          }
+
+          ${media.tabletM} {
+            height: 30rem;
+            top: 0;
+          }
+
+          ${media.desktop} {
+            height: 76rem;
+          }
+        }
       }
 
       &_text {
@@ -29,17 +79,72 @@ export const ContactStyled = styled.div`
         flex-direction: column;
         ${GLOBAL_FLEX.START};
         top: 0;
-        margin: 8%;
         color: ${COLORS.MYSTIC[100]};
 
         &_title {
-          ${GLOBAL_SIZING_FONTS.TEXT_3XL}
+          font-size: clamp(1.1rem, -0.875rem + 8.333333vw, 2.5rem);
         }
 
         &_description {
           margin-top: 1rem;
-          ${GLOBAL_SIZING_FONTS.TEXT_BASE}
+          font-size: clamp(1rem, -0.875rem + 8.333333vw, 1.2rem);
         }
+
+        ${media.mobileS} {
+          margin-top: 6rem;
+          line-height: 1.3rem;
+          text-align: center;
+          align-items: center;
+          &_title,
+          &_description {
+            margin-left: 10px;
+            margin-right: 10px;
+          }
+        }
+
+        ${media.mobileM} {
+          line-height: 1.8rem;
+        }
+
+        ${media.tabletM} {
+          margin-top: 8rem;
+          line-height: 1.5rem;
+
+          &_title,
+          &_description {
+            margin-left: 50px;
+            margin-right: 50px;
+          }
+        }
+
+        ${media.tabletL} {
+          margin-top: 8rem;
+          align-items: flex-start;
+          text-align: left;
+
+          &_title,
+          &_description {
+            margin-left: 150px;
+            margin-right: 150px;
+          }
+        }
+
+        ${media.laptopL} {
+          margin-top: 10rem;
+        }
+      }
+    }
+
+    &_two {
+      ${media.mobileS} {
+        margin-top: 14rem;
+      }
+      ${media.mobileM} {
+        margin-top: 24rem;
+      }
+
+      ${media.tabletM} {
+        margin-top: 0;
       }
     }
 
@@ -53,20 +158,31 @@ export const ContactStyled = styled.div`
         margin-right: 0%;
         margin-bottom: 0%;
         margin-left: 0%;
-        width: 50%;
         background-color: ${COLORS.MYSTIC[100]};
         border-bottom: solid 3px ${COLORS.FUN_BLUE[500]};
+
+        ${media.mobileS} {
+          width: 96%;
+        }
+
+        ${media.tabletL} {
+          width: 70%;
+        }
+
+        ${media.laptopM} {
+          width: 70%;
+        }
 
         &_content {
           ${GLOBAL_FLEX.CENTER}
           flex-direction: column;
 
           h3 {
-            font-size: 20px;
+            font-size: clamp(1.1rem, -0.875rem + 8.333333vw, 20px);
             font-weight: 600;
-            margin-top: 4%;
+            margin-top: 3rem;
             margin-right: 0px;
-            margin-bottom: 3%;
+            margin-bottom: 1rem;
             margin-left: 0px;
           }
 
@@ -88,36 +204,53 @@ export const ContactStyled = styled.div`
     }
 
     &_three {
-      width: 51%;
       margin: auto;
-      justify-content: space-around;
+
+      ${media.mobileS} {
+        flex-direction: column;
+
+        &_left,
+        &_right {
+          width: 96%;
+          margin-top: 1rem;
+          padding-top: 1rem;
+
+          h3 {
+            padding-bottom: 0.5rem;
+          }
+        }
+      }
+
+      ${media.tabletL} {
+        flex-direction: row;
+        width: 70%;
+
+        &_left,
+        &_right {
+          width: 49;
+          margin-top: 1rem;
+          padding-top: 1rem;
+
+          h3 {
+            padding-bottom: 0.5rem;
+          }
+        }
+      }
 
       &_left {
-        margin-top: 6%;
-        margin-right: 0%;
-        margin-bottom: 0%;
-        margin-left: 0%;
-        width: 48%;
         background-color: ${COLORS.MYSTIC[100]};
         border-bottom: solid 3px ${COLORS.FUN_BLUE[500]};
 
         :hover {
-          /* box-shadow: 1px 6px 20px #221b1c1f; */
           box-shadow: 0px 6px 20px #221b1c1f;
         }
       }
 
       &_right {
-        margin-top: 6%;
-        margin-right: 0%;
-        margin-bottom: 0%;
-        margin-left: 0%;
-        width: 48%;
         background-color: ${COLORS.MYSTIC[100]};
         border-bottom: solid 3px ${COLORS.FUN_BLUE[500]};
 
         :hover {
-          /* box-shadow: 1px 6px 20px #221b1c1f; */
           box-shadow: 0px 6px 20px #221b1c1f;
         }
       }
@@ -140,6 +273,34 @@ export const ContactStyled = styled.div`
         line-height: 20px;
         text-align: center;
       }
+    }
+  }
+
+  ${media.mobileS} {
+    .MuiGrid-spacing-xs-3 {
+      width: calc(100% + 13px);
+    }
+  }
+
+  ${media.tabletM} {
+    .MuiGrid-spacing-xs-3 > .MuiGrid-item {
+      padding: 12px;
+    }
+
+    .MuiGrid-spacing-xs-3 {
+      width: calc(100% + 24px);
+    }
+
+    .MuiContainer-root {
+      padding-left: 16px;
+      padding-right: 16px;
+    }
+  }
+
+  ${media.tabletL} {
+    .MuiContainer-root {
+      padding-left: 10%;
+      padding-right: 10%;
     }
   }
 `;

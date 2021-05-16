@@ -32,7 +32,7 @@ export const BtnStyled = styled.div<PropsStyled>`
 
     ${media.mobileS} {
       padding: 10px 10px 10px 5px;
-      width: none;
+      width: ${(props) => (props.width ? props.width : "auto")};
       height: 2.5rem;
       font-size: 0.8rem;
     }
