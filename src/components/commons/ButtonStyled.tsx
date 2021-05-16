@@ -31,7 +31,7 @@ export const BtnStyled = styled.div<PropsStyled>`
     transition: 0.3s ease-in-out;
 
     ${media.mobileS} {
-      padding: 10px 10px 10px 5px;
+      padding: 10px 5px 10px 0px;
       width: ${(props) => (props.width ? props.width : "auto")};
       height: 2.5rem;
       font-size: 0.8rem;

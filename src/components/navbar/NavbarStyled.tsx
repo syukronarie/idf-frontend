@@ -1,6 +1,6 @@
 import IconPlane from "src/assets/svg/IconPlane";
 import media from "src/utils/constants/DeviceConstant";
-import styled, { css } from "styled-components";
+import styled, { css, keyframes } from "styled-components";
 
 import COLORS from "@styles/globalColors";
 import GLOBAL_FLEX from "@styles/globalFlex";
@@ -17,7 +17,7 @@ export const NavStyled = styled.div<PropsNavbarStyle>`
   align-items: center;
   width: 100%;
   background-color: ${COLORS.MYSTIC[100]};
-  z-index: 3;
+  z-index: 5;
 
   /* ${media.mobileS} {
     background-color: green;
@@ -36,6 +36,26 @@ export const NavStyled = styled.div<PropsNavbarStyle>`
           box-shadow: #0000001a 1px 3px 10px 0px;
         `
       : ""}
+
+  .burger {
+    ${media.mobileS} {
+      display: flex;
+      left: 3px;
+      z-index: 4;
+    }
+
+    ${media.mobileM} {
+      left: 15px;
+    }
+
+    ${media.mobileL} {
+      left: 25px;
+    }
+
+    ${media.tabletL} {
+      display: none;
+    }
+  }
 
   .dekstop {
     display: flex;
@@ -105,6 +125,74 @@ export const NavStyled = styled.div<PropsNavbarStyle>`
       color: ${COLORS.MYSTIC[200]};
       background-color: ${COLORS.FUN_BLUE[500]};
       font-size: ${GLOBAL_SIZING_FONTS.TEXT_SM};
+    }
+  }
+`;
+
+const fadeIn = keyframes`
+  from {
+    display: flex;
+  }
+
+  to {
+    display: none;
+  }
+`;
+
+export const SideBarStyled = styled.div`
+  ${media.tabletL} {
+    display: none;
+  }
+
+  .sideBarActive {
+    transition: all 0.25s ease-in;
+    top: 0;
+    justify-content: center;
+    width: 100%;
+    height: 50vh;
+    padding-bottom: 20%;
+    background-color: #fffffff7;
+    border-bottom: solid 3px #1e69b7;
+    box-shadow: 0px 0px 0px #000;
+    z-index: 4;
+  }
+
+  .sideBarDeactive {
+    top: -25rem;
+    animation: ${fadeIn} 0.5s ease;
+  }
+
+  ul {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    padding-top: 6rem;
+    transition: all 0.25s ease-in;
+
+    a {
+      width: 100%;
+    }
+
+    li {
+      font-size: 16px;
+      line-height: 2.5rem;
+      color: ${COLORS.FUN_BLUE[400]};
+
+      ${media.mobileS} {
+        padding-left: 2rem;
+      }
+
+      ${media.mobileM} {
+        padding-left: 15px;
+      }
+
+      ${media.mobileL} {
+        padding-left: 25px;
+      }
     }
   }
 `;

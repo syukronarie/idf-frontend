@@ -6,13 +6,13 @@ import HomeTestimony from "./HomeTestimony";
 
 const HomePage: React.FC = () => {
   return (
-    <div>
+    <>
       <NavbarDekstop />
       <HomeHeader />
       <HomeTestimony />
       <HomeActivities />
       <FooterDekstop />
-    </div>
+    </>
   );
 };
 

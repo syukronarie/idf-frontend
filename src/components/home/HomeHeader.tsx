@@ -41,7 +41,7 @@ const HomeHeader: React.FC = () => {
             <div className="btn-group">
               <div className="_item">
                 <Link href="/register">
-                  <Button width="13rem" height="4rem">
+                  <Button width="8rem" height="4rem">
                     <Plane />
                     Daftar Sekarang
                   </Button>
@@ -49,7 +49,7 @@ const HomeHeader: React.FC = () => {
               </div>
               <div className="_item">
                 <Button
-                  width="13rem"
+                  width="8rem"
                   height="4rem"
                   border={`1px solid ${COLORS.MYSTIC[200]}`}
                   backgroundColorOne={"#fdfdfe59"}
