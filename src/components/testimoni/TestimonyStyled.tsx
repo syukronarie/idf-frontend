@@ -1,19 +1,39 @@
+import media from "src/utils/constants/DeviceConstant";
 import styled from "styled-components";
 
 import COLORS from "@styles/globalColors";
 import GLOBAL_SIZING_FONTS from "@styles/globalSizingFonts";
 
 export const Wrapper = styled.div`
-  @media screen and (min-width: 768px) {
-    padding-top: 7rem;
+  ${media.mobileS} {
+    line-height: 1.8rem;
+    padding-top: 6rem;
+  }
+
+  ${media.mobileM} {
+    line-height: 2rem;
+  }
+
+  ${media.tabletM} {
+    line-height: 2.5rem;
+  }
+
+  ${media.tabletL} {
+    padding-top: 10rem;
   }
 
   .heading-title {
-    ${GLOBAL_SIZING_FONTS.TEXT_4XL};
+    font-size: clamp(1.6rem, -0.875rem + 8.333333vw, 2.5rem);
     text-align: center;
-    padding: 2% 0;
     color: ${COLORS.FUN_BLUE[500]};
     font-weight: 500;
+    padding: 2% 0%;
+  }
+
+  ${media.tabletL} {
+    .heading-title {
+      padding: 2% 10%;
+    }
   }
 
   .masonry {
