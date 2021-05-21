@@ -9,7 +9,7 @@ import Button from "../commons/Button";
 import FooterDekstop from "../footer/FooterDekstop";
 import { Alert, ContactStyled } from "./ContactStyled";
 
-export const idfNumber = "628112952047";
+export const idfNumber = "6285647266159";
 
 const ContactPage: React.FC = () => {
   const [name, setName] = React.useState("");
