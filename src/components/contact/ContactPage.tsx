@@ -9,7 +9,7 @@ import Button from "../commons/Button";
 import FooterDekstop from "../footer/FooterDekstop";
 import { Alert, ContactStyled } from "./ContactStyled";
 
-export const idfNumber = "6285647266159";
+export const idfNumber = "628112952047";
 
 const ContactPage: React.FC = () => {
   const [name, setName] = React.useState("");
@@ -184,7 +184,7 @@ const ContactPage: React.FC = () => {
             <div className="contact-content_three_right">
               <h3 className="contact-content_one_text_title">No Telepon</h3>
               <p className="contact-content_one_text_description">
-                08112952047
+                {idfNumber}
               </p>
             </div>
           </div>
