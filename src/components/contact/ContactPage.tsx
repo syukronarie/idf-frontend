@@ -59,7 +59,7 @@ const ContactPage: React.FC = () => {
             <div className="contact-content_one_text">
               <h3 className="contact-content_one_text_title">Kontak Kami</h3>
               <p className="contact-content_one_text_description">
-                Perlu menghubungi kami?
+             
               </p>
               <p className="contact-content_one_text_description">
                 Hubungi kami sekarang juga untuk bisa berkarir dibidang penerbangan.
