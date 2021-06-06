@@ -30,12 +30,12 @@ const HomeHeader: React.FC = () => {
         </div>
         <div className="heading_content">
           <div className="heading_content_wrapper">
-            <h1 className="heading_title">Indonesia Dirgantara Flight</h1>
+            <h1 className="heading_title">Indonesia Dirgantara Flight-IDF Samarinda</h1>
             <h2 className="heading_description">
-              Lembaga Pendidikan Pramugari/Pramugara dan Staf Penerbangan
+              Sekolah Penerbangan Terbaik
             </h2>
             <h2 className="heading_description">
-              (IDF Samarinda - Kalimantan Timur)
+              Pramugari/Pramugara dan Staf Penerbangan
             </h2>
 
             <div className="btn-group">
