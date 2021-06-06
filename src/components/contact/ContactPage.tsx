@@ -66,7 +66,7 @@ const ContactPage: React.FC = () => {
               </p>
               <p className="contact-content_one_text_description">
                 Dengan mengisi formulir di bawah ini, melalui
-                email, telepon, teks atau surat Selain itu, Anda dapat mengikuti
+                email, telepon, teks atau surat, Anda dapat mengikuti
                 kami di{" "}
                 <a href="https://www.instagram.com/generation3_idf/">
                   Facebook
