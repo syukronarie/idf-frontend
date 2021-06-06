@@ -28,7 +28,7 @@ const ProfilePage: React.FC = () => {
                 Indonesia Dirgantara Flight
               </h3>
               <p className="profile_content_one_text_description">
-                IDF adalah Lembaga Pendidikan Staff Airlines dan Kepramugarian
+                IDF adalah Lembaga Pendidikan Staf Airlines dan Kepramugarian
                 yang merupakan wujud peran serta tanggung jawab dalam usaha
                 mencerdaskan kehidupan bangsa.
               </p>
@@ -80,7 +80,7 @@ const ProfilePage: React.FC = () => {
                 </p>
 
                 <p style={{ margin: "0.5% 9%" }}>
-                  • Staff Airlines:
+                  • Staf Airlines:
                   <br />
                   Greeting Service, Announcement, Ticketing & Reservasi,
                   Check-in Counter, Passasi.
