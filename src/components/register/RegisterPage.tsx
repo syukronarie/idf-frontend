@@ -361,7 +361,7 @@ const RegisterPage: React.FC = () => {
                       })
                     }
                     label="Program Keahlian Profesi 1 Tahun">
-                    <MenuItem value="Staff Airlines">Staff Airlines</MenuItem>
+                    <MenuItem value="Staff Airlines">Staf Airlines</MenuItem>
                     <MenuItem value="Pramugari Pramugara">
                       Pramugari Pramugara
                     </MenuItem>
