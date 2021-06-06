@@ -182,7 +182,7 @@ const ContactPage: React.FC = () => {
             </div>
 
             <div className="contact-content_three_right">
-              <h3 className="contact-content_one_text_title">No Telepon</h3>
+              <h3 className="contact-content_one_text_title">No Telepon (WA)</h3>
               <p className="contact-content_one_text_description">
                 {idfNumber}
               </p>
