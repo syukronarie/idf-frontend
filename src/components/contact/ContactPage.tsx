@@ -62,14 +62,10 @@ const ContactPage: React.FC = () => {
                 Perlu menghubungi kami?
               </p>
               <p className="contact-content_one_text_description">
-                Kami di sini untuk membantu! Hubungi Departemen Layanan
-                Pelanggan kami melalui salah satu metode di bawah ini dan beri
-                tahu kami bagaimana kami dapat mendukung Anda. Pernyataan misi
-                kami adalah "Untuk memperlakukan setiap klien seperti
-                satu-satunya klien kami ..."
+                Hubungi kami sekarang juga untuk bisa berkarir dibidang penerbangan.
               </p>
               <p className="contact-content_one_text_description">
-                Hubungi kami dengan mengisi formulir di bawah ini, melalui
+                Dengan mengisi formulir di bawah ini, melalui
                 email, telepon, teks atau surat Selain itu, Anda dapat mengikuti
                 kami di{" "}
                 <a href="https://www.instagram.com/generation3_idf/">
@@ -81,8 +77,9 @@ const ContactPage: React.FC = () => {
                 </a>
               </p>
               <p className="contact-content_one_text_description">
-                Kampus Indonesia Dirgantara Flight berlamat di Jl. M. Yamin No.
-                6 gedung Yayasan Tunas Kelapa Samarinda
+                Atau datang langsung ke kampus kami yang beralamat di
+                Jl. Pipit No. 22 Bandara Temindung
+                Samarinda - Kalimantan Timur
               </p>
             </div>
           </div>
