@@ -24,7 +24,7 @@ const FooterDekstop: React.FC = () => {
           <p>
             Para profesional penerbangan lulus dari IDF.
             <br />
-            Kami bekerja dengan maskapai penerbangan dan bandar udara untuk memberikan pelatihan
+            Kami bekerja sama dengan maskapai penerbangan dan bandar udara untuk memberikan pelatihan
             penerbangan terbaik.
           </p>
           <p>
