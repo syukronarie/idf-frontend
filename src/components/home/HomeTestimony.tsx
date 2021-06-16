@@ -9,7 +9,7 @@ const TestimonyData = [
     name: "Rere Effendy Gosnes",
     image: "/img/testimony/image1.jpeg",
     text:
-      "Saya Rere Effendy Gosnes dari kota Bontang Kalimantan Timur.\n Saya alumni IDF 2017, jurusan STAF AIRLINES program kuliah 1 tahun.\n Saya bekerja di bandara Apt Pranoto Samarinda Kalimantan Timur di bagian Apron Movement Control.\n \n Saya berterima kasih kepada IDF Samarinda sebagai sarana belajar dan menimba ilmu.\n \n Selalu percaya diri dan semangat karena usaha selalu memberikan hasil yang memuaskan jika usaha itu ditekuni dengan sungguh-sungguh.\n SUKSES IDF Samarinda"
+      "Saya IKHSAN MAULANA biasa dipanggil IKHSAN berasal dari Jambi - Sumatera \n Saya alumni IDF 2019 jurusan STAF AIRLINES program kuliah 1 tahun. \n Saya kerja di SN Cargo bandara Apt Pranoto Samarinda. \n \n Yang muda yang berkarya. \n \n Terima kasih IDF telah memberikan bekal ilmu."
   },
   {
     id: "2",
