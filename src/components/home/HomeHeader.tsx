@@ -20,7 +20,7 @@ const HomeHeader: React.FC = () => {
       <div className="heading">
         <div className="heading_image">
           <Image
-            src="/img/plane_02.jpg"
+            src="/img/foto1.jpg"
             layout="responsive"
             width={"1440"}
             height={"1060"}
