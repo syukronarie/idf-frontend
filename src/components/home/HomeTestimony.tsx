@@ -6,7 +6,7 @@ import { TestimonyStyled } from "./HomeStyled";
 const TestimonyData = [
   {
     id: "1",
-    name: "Rere Effendy Gosnes",
+    name: "Ikhsan Maulana",
     image: "/img/testimony/image1.jpeg",
     text:
       "Saya IKHSAN MAULANA biasa dipanggil IKHSAN berasal dari Jambi - Sumatera \n Saya alumni IDF 2019 jurusan STAF AIRLINES program kuliah 1 tahun. \n Saya kerja di SN Cargo bandara Apt Pranoto Samarinda. \n \n Yang muda yang berkarya. \n \n Terima kasih IDF telah memberikan bekal ilmu."
