@@ -6,31 +6,31 @@ import { TestimonyStyled } from "./HomeStyled";
 const TestimonyData = [
   {
     id: "1",
-    name: "Ikhsan Maulana",
+    name: "Sella Dhelpiana Fatihah",
     image: "/img/testimony/image1.jpeg",
     text:
-      "Nama saya Sella Delphiana Fatihah \n Saya alumni IDF 2019 jurusan STAF AIRLINES program kuliah 1 tahun. \n Sekarang saya bekerja sebagai brand ambasador Batik Air \n \n di Bandara APT Pranoto Samarinda \n \n Terima kasih IDF karena telah membantu saya dalam hal penempatan kerja. \n \n Sukses Selalu IDF Samarinda"
+      "Nama saya Sella Delphiana Fatihah \n Saya alumni IDF 2019 jurusan STAF AIRLINES program kuliah 1 tahun. \n Sekarang saya bekerja sebagai brand ambasador Batik Air \n \n di Bandara APT Pranoto Samarinda \n \n Terima kasih IDF karena telah membantu saya dalam hal penempatan kerja. \n Sukses Selalu IDF Samarinda"
   },
   {
     id: "2",
-    name: "Sella",
+    name: "Uddana Prayoga",
     image: "/img/testimony/image4.jpeg",
     text:
-      "Nama saya Sella, berasal dari kota Samarinda - Kalimantan Timur.\n Saya alumni IDF Angkatan 2017, jurusan STAF AIRLINES program kuliah 1 tahun.\n Saya bekerja di Batik Air bandara Apt Pranoto Samarinda.\n Tak ada yang sia - sia, semua bergantung dari usaha keras dan tak patah semangat.\n Belajarlah di IDF jika ingin kerja di dunia penerbangan.\n SUKSES IDF Samarinda."
+      "Saya Uddana Prayoga, biasa dipanggil Udanna.\n Saya alumni IDF Angkatan 2017, jurusan STAF AIRLINES program diklat 6 bulan.\n Sebelumnya saya sudah pernah kuliah D3, tapi bukan pasion saya.\n Akhirnya saya kuliah di IDF dan saya merasa sesuai \n dengan keinginan saya yaitu belajar penerbangan \n dan sekarang saya bekerja di Bandar Udara \n APT. Pranoto Samarinda"
   },
   {
     id: "3",
-    name: "Haikal Rahmadani",
+    name: "Kaniawati",
     image: "/img/testimony/image3.jpeg",
     text:
-      "Saya Haikal Rahmadani, biasa dipanggil Haikal, asal kota dari Samarinda - Kalimantan Timur.\n Saya alumni IDF 2017, jurusan STAF AIRLINES, program kuliah 1 tahun..\n Saat ini saya bekerja di SN Cargo bandara Apt Pranoto, dan sempat juga bekerja di Sriwijaya Air selama 1 tahun..\n Saya ucapkan terimakasih tak terhingga kepada IDF karena telah menjembatani dan mempermudah saya dalam mencari pekerjaan di dunia penerbangan..\n SALAM SEMANGAT IDF Samarinda!"
+      "Saya Kaniawati, alumni IDF 2017, jurusan STAF AIRLINES, program kuliah 1 tahun.\n Saya ucapkan terimakasih tak terhingga kepada IDF \n karena telah menjembatani dan mempermudah saya dalam OJT ( On Job Training ) \n AMC Bandar Udara APT Pranoto Samarinda.\n SALAM SEMANGAT IDF Samarinda!"
   },
   {
     id: "4",
-    name: "Madzullin Farida Adhan",
+    name: "Siregar Kharisma Aulia",
     image: "/img/testimony/image2.jpeg",
     text:
-      "Nama saya Madzullin Farida Adhan, biasa dipanggil Ririn berasal dari kota Tenggarong - Kalimantan Timur.\n Saya alumni IDF Angkatan 2017, jurusan STAF AIRLINES program kuliah 1 tahun.\n Saya sekarang bekerja di Maskapai Lion Air Group Bandar Udara Sepinggan Balikpapan.\n “Jangan berhenti mengejar mimpimu, meskipun kamu punya semua alasan untuk menyerah. Jadilah generasi muda yang berani sukses di usia muda.“"
+      "Nama saya Siregar Kharisma Aulia, \n Saya alumni IDF Angkatan 2017, jurusan STAF AIRLINES program kuliah 1 tahun.\n Saya ucapkan terimakasih tak terhingga kepada IDF \n karena telah menjembatani dan mempermudah saya dalam OJT ( On Job Training ) \n AMC Bandar Udara APT Pranoto Samarinda.\n SUKSES SELALU IDF Samarinda!"
   }
 ];
 
