@@ -9,7 +9,7 @@ const TestimonyData = [
     name: "Ikhsan Maulana",
     image: "/img/testimony/image1.jpeg",
     text:
-      "Saya IKHSAN MAULANA biasa dipanggil IKHSAN berasal dari Jambi - Sumatera \n Saya alumni IDF 2019 jurusan STAF AIRLINES program kuliah 1 tahun. \n Saya kerja di SN Cargo bandara Apt Pranoto Samarinda. \n \n Yang muda yang berkarya. \n \n Terima kasih IDF telah memberikan bekal ilmu."
+      "Nama saya Sella Delphiana Fatihah \n Saya alumni IDF 2019 jurusan STAF AIRLINES program kuliah 1 tahun. \n Sekarang saya bekerja sebagai brand ambasador Batik Air \n \n di Bandara APT Pranoto Samarinda \n \n Terima kasih IDF karena telah membantu saya dalam hal penempatan kerja. \n \n Sukses Selalu IDF Samarinda"
   },
   {
     id: "2",
