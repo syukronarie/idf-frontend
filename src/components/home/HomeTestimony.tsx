@@ -6,10 +6,10 @@ import { TestimonyStyled } from "./HomeStyled";
 const TestimonyData = [
   {
     id: "1",
-    name: "Sella Dhelpiana Fatihah",
+    name: "Susilo Saputra",
     image: "/img/testimony/image1.jpeg",
     text:
-      "Nama saya Sella Delphiana Fatihah \n Saya alumni IDF 2019 jurusan STAF AIRLINES program kuliah 1 tahun. \n Sekarang saya bekerja sebagai brand ambasador Batik Air \n \n di Bandara APT Pranoto Samarinda \n \n Terima kasih IDF karena telah membantu saya dalam hal penempatan kerja. \n Sukses Selalu IDF Samarinda"
+      "Nama saya Susilo Saputra \n Saya alumni IDF jurusan Cargo program kuliah 1 tahun. \n terimakasih IDF karena saya sudah menempatakn saya \n untuk On Job Training ( OJT ) di AMC Pranoto \n Smarinda Kalimantan Timur \n Sukses selalu IDF 
   },
   {
     id: "2",
