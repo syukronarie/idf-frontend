@@ -16,7 +16,7 @@ const TestimonyData = [
     name: "M. Irfan Raiksan Noor",
     image: "/img/testimony/image4.jpeg",
     text:
-      "Saya M. Irfan Raiksan Noor. \n Saya alumni IDF jurusan STAF AIRLINES program diklat 6 bulan.\n besama IDF saya sudah di tempatkan OJT. \n di Gapura Bandar Udara APT Pranoto. \n IDF memberi bukti bukan janji penempatan OJT ( On Job Training ). Terimakasih IDF.."
+      "Saya M. Irfan Raiksan Noor. \n\n Saya alumni IDF jurusan STAF AIRLINES program diklat 6 bulan.\n besama IDF saya sudah di tempatkan OJT. \n di Gapura Bandar Udara APT Pranoto. \n IDF memberi bukti bukan janji penempatan OJT ( On Job Training ). Terimakasih IDF.."
   },
   {
     id: "3",
