@@ -13,10 +13,10 @@ const TestimonyData = [
   },
   {
     id: "2",
-    name: "Uddana Prayoga",
+    name: "M. Irfan Raiksan Noor",
     image: "/img/testimony/image4.jpeg",
     text:
-      "Saya Uddana Prayoga, biasa dipanggil Udanna.\n Saya alumni IDF Angkatan 2017, jurusan STAF AIRLINES program diklat 6 bulan.\n Sebelumnya saya sudah pernah kuliah D3, tapi bukan pasion saya.\n Akhirnya saya kuliah di IDF dan saya merasa sesuai \n dengan keinginan saya yaitu belajar penerbangan \n dan sekarang saya bekerja di Bandar Udara \n APT. Pranoto Samarinda"
+      "Saya M. Irfan Raiksan Noor. \n Saya alumni IDF jurusan STAF AIRLINES program diklat 6 bulan.\n besama IDF saya sudah di tempatkan OJT. \n di Gapura Bandar Udara APT Pranoto. \n IDF memberi bukti bukan janji penempatan OJT ( On Job Training ). Terimakasih IDF.."
   },
   {
     id: "3",
