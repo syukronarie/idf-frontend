@@ -9,7 +9,7 @@ const TestimonyData = [
     name: "Susilo Saputra",
     image: "/img/testimony/image1.jpeg",
     text:
-      "Nama saya Susilo Saputra \n Saya alumni IDF jurusan Cargo program kuliah 1 tahun. \n terimakasih IDF karena saya sudah menempatakn saya \n untuk On Job Training ( OJT ) di AMC Pranoto \n Smarinda Kalimantan Timur \n Sukses selalu IDF 
+      "Nama saya Susilo Saputra \n Saya alumni IDF jurusan Cargo program kuliah 1 tahun. \n terimakasih IDF karena saya sudah menempatakn saya \n untuk On Job Training ( OJT ) di AMC Pranoto \n Smarinda Kalimantan Timur \n Sukses selalu IDF!" 
   },
   {
     id: "2",
