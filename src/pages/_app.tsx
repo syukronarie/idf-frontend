@@ -63,6 +63,14 @@ function MyApp({ Component, pageProps }) {
           content='Indonesia Dirgantara Flight (IDF) adalah Lembaga Pendidikan Staff Airlines dan Kepramugarian yang merupakan wujud peran serta tanggung jawab dalam usaha mencerdaskan kehidupan bangsa.'
         />
         <meta property='twitter:image' content='' />
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-199916643-1"></script>
+        <script dangerouslySetInnerHTML={{__html:`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'UA-199916643-1');
+            
+        `}} />
       </Head>
       <GlobalStyles />
       <Component {...pageProps} />
