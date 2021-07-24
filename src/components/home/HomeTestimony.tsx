@@ -20,10 +20,10 @@ const TestimonyData = [
   },
   {
     id: "3",
-    name: "Kaniawati",
+    name: "Muhammad Jahrani",
     image: "/img/testimony/image3.jpeg",
     text:
-      "Saya Kaniawati, alumni IDF 2017, jurusan STAF AIRLINES, program kuliah 1 tahun.\n Saya ucapkan terimakasih tak terhingga kepada IDF \n karena telah menjembatani dan mempermudah saya dalam OJT ( On Job Training ) \n AMC Bandar Udara APT Pranoto Samarinda.\n SALAM SEMANGAT IDF Samarinda!"
+      "Hallo, Nama Saya Muhammad Jahrani lulusan IDF Samarinda. Bagi teman - teman yang ingin cepat kerja / On Job Training (OJT) ayo buruan daftar ke Sekolah Penerbangan terbaik di samarinda. Disini teman - teman akan di latih oleh para praktisi profesional yang mampu mengubah pola pikir untuk mampu bersaing di dunia kerja khususnya dunia penerbangan...Ayo buruan gabung dengan IDF........"
   },
   {
     id: "4",
