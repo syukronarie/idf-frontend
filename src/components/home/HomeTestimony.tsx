@@ -6,10 +6,10 @@ import { TestimonyStyled } from "./HomeStyled";
 const TestimonyData = [
   {
     id: "1",
-    name: "Susilo Saputra",
+    name: "Nur Budi Setyanti",
     image: "/img/testimony/image1.jpeg",
     text:
-      "Nama saya Susilo Saputra \n Saya alumni IDF jurusan Cargo program kuliah 1 tahun. \n terimakasih IDF karena saya sudah menempatakn saya \n untuk On Job Training ( OJT ) di AMC Pranoto \n Smarinda Kalimantan Timur \n Sukses selalu IDF!" 
+      "Hy Semuanya.....\n Perkenalkan Namaku Nur Budi Setyanti aku lulusan Indonesian Dirgantara Flight (IDF) Samarinda. \n Walaupun kuliahku di sekolah penerbangan tetapi IDF berbeda, \n IDF bisa menyalurkan ku bekerja tidak hanya di lingkup penerbangan saja lho. \n Ada berbagai mitra kerja IDF Samarinda salah satunya di perbangkan, contohnya aku kerja di Panin Bank. /n Terimakasih IDF Samarinda telah membantuku dalam penempatan kerja.....\n SUKSES SELALU IDF!" 
   },
   {
     id: "2",
