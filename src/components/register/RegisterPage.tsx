@@ -365,6 +365,7 @@ const RegisterPage: React.FC = () => {
                     <MenuItem value="Staff Airlines">Staf Airlines</MenuItem>
                     <MenuItem value="Pramugari Pramugara">Pramugari Pramugara</MenuItem>
                     <MenuItem value="Cargo Udara">Cargo Udara</MenuItem>
+                    <MenuItem value="Marshalling">Marshalling</MenuItem>
                   </Select>
                 </FormControl>
               </Grid>
