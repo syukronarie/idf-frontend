@@ -363,9 +363,8 @@ const RegisterPage: React.FC = () => {
                     label="Program Keahlian Profesi 1 Tahun">
                     <MenuItem value="AVSEC">AVSEC ( Keamanan Penerbangan )</MenuItem>
                     <MenuItem value="Staff Airlines">Staf Airlines</MenuItem>
-                    <MenuItem value="Pramugari Pramugara">
-                      Pramugari Pramugara
-                    </MenuItem>
+                    <MenuItem value="Pramugari Pramugara">Pramugari Pramugara</MenuItem>
+                    <MenuItem value="Cargo Udara">Cargo Udara</MenuItem>
                   </Select>
                 </FormControl>
               </Grid>
