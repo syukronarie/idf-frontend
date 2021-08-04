@@ -14,7 +14,7 @@ const TestimonyData = [
   {
     id: "2",
     name: "Juniansyah",
-    image: "/img/testimony/image4.jpeg",
+    image: "/img/testimony/image4.jpg",
     text:
       "Hy nama saya Juniansyah saya alumni Indonesia Dirgantara Flight,\n\n IDF Samarinda tahun 2020. \n\n Saya ambil DIKLAT jurusan STAF AIRLINES-Passasi. \n Bersama IDF penempatan kerja ataupun OJT menjadi mudah karena adanya hubungan dengan mitra kerja di bandar udara. \n Ayo gabung dengan IDF untuk mewujudkan mimpi berkarir di bidang penerbangan."
   },
