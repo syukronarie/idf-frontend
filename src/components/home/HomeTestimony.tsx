@@ -16,7 +16,7 @@ const TestimonyData = [
     name: "M. Irfan Raiksan Noor",
     image: "/img/testimony/image4.jpeg",
     text:
-      "Saya M. Irfan Raiksan Noor. \n\n Saya alumni IDF jurusan STAF AIRLINES program diklat 6 bulan.\n besama IDF saya sudah di tempatkan OJT. \n di Gapura Bandar Udara APT Pranoto. \n IDF memberi bukti bukan janji penempatan OJT ( On Job Training ). Terimakasih IDF.."
+      "Hy nama saya Juniansyah saya alumni Indonesia Dirgantara Flight,\n IDF Samarinda tahun 2020 \n Saya ambil DIKLAT jurusan STAF AIRLINES-Passasi. \n Bersama IDF penempatan kerja ataupun OJT menjadi mudah karena adanya hubungan dengan mitra kerja di bandar udara. \n Ayo gabung dengan IDF untuk mewujudkan mimpi berkarir di bidang penerbangan."
   },
   {
     id: "3",
