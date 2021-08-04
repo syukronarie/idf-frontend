@@ -13,10 +13,10 @@ const TestimonyData = [
   },
   {
     id: "2",
-    name: "M. Irfan Raiksan Noor",
+    name: "Juniansyah",
     image: "/img/testimony/image4.jpeg",
     text:
-      "Hy nama saya Juniansyah saya alumni Indonesia Dirgantara Flight,\n IDF Samarinda tahun 2020 \n Saya ambil DIKLAT jurusan STAF AIRLINES-Passasi. \n Bersama IDF penempatan kerja ataupun OJT menjadi mudah karena adanya hubungan dengan mitra kerja di bandar udara. \n Ayo gabung dengan IDF untuk mewujudkan mimpi berkarir di bidang penerbangan."
+      "Hy nama saya Juniansyah saya alumni Indonesia Dirgantara Flight,\n\n IDF Samarinda tahun 2020. \n\n Saya ambil DIKLAT jurusan STAF AIRLINES-Passasi. \n Bersama IDF penempatan kerja ataupun OJT menjadi mudah karena adanya hubungan dengan mitra kerja di bandar udara. \n Ayo gabung dengan IDF untuk mewujudkan mimpi berkarir di bidang penerbangan."
   },
   {
     id: "3",
