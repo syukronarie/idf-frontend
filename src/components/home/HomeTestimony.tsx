@@ -6,17 +6,18 @@ import { TestimonyStyled } from "./HomeStyled";
 const TestimonyData = [
   {
     id: "1",
-    name: "Nur Budi Setyanti",
+    name: "Susilo Saputra",
     image: "/img/testimony/image1.jpeg",
     text:
-      "Hy Semuanya.....\n Perkenalkan Namaku Nur Budi Setyanti aku lulusan Indonesian Dirgantara Flight (IDF) Samarinda. \n Walaupun kuliahku di sekolah penerbangan tetapi IDF berbeda, \n IDF bisa menyalurkan ku bekerja tidak hanya di lingkup penerbangan saja lho. \n Ada berbagai mitra kerja IDF Samarinda salah satunya di perbangkan, contohnya aku kerja di Panin Bank. /n Terimakasih IDF Samarinda telah membantuku dalam penempatan kerja.....\n SUKSES SELALU IDF!" 
+      "Haaaaii namaku Susilo Saputra biasa dipanggil Lilo. \n\n Kuliah di IDF Samarinda tuh keren loh.\n\n Bangganya.... aku ditempatkan magang di AMC bandara APT Pranoto Samarinda. \n\n Ikutan yuuuk segera daftar" 
   },
   {
     id: "2",
-    name: "Juniansyah",
+    name: "Jessica Anjelia",
     image: "/img/testimony/image4.jpg",
     text:
-      "Hy nama saya Juniansyah saya alumni Indonesia Dirgantara Flight,\n\n IDF Samarinda tahun 2020. \n\n Saya ambil DIKLAT jurusan STAF AIRLINES-Passasi. \n Bersama IDF penempatan kerja ataupun OJT menjadi mudah karena adanya hubungan dengan mitra kerja di bandar udara. \n Ayo gabung dengan IDF untuk mewujudkan mimpi berkarir di bidang penerbangan."
+      "Hy nama ku Jessica Anjelia,\n\n aku lulusan Indonesia Dirgantara Flight ( IDF ) sekolah penerbangan terbaik di Samarinda. \n\n Aku alumni tahun 2020, selama di IDF aku mendapat pengalaman di dunia penerbangan karena ada On Job Training ( OJT ) dan bisa di bantu untuk penempatan kerja. \n\n Belajar di IDF sangat menyenangkan karena mendapat ilmu yang bisa di praktekkan secara langsung contohnya aku yang di bantu OJT di bagian Ground Handling - CDA di bandara APT Pranoto Samarinda.\n\n 
+       Jadi bagi teman - teman yang ingin berkarir di penerbangan IDF lah solusinya. Ayo buruan daftar sekarang."
   },
   {
     id: "3",
@@ -27,10 +28,10 @@ const TestimonyData = [
   },
   {
     id: "4",
-    name: "Siregar Kharisma Aulia",
+    name: "Sella",
     image: "/img/testimony/image2.jpeg",
     text:
-      "Nama saya Siregar Kharisma Aulia, \n Saya alumni IDF Angkatan 2017, jurusan STAF AIRLINES program kuliah 1 tahun.\n Saya ucapkan terimakasih tak terhingga kepada IDF \n karena telah menjembatani dan mempermudah saya dalam OJT ( On Job Training ) \n AMC Bandar Udara APT Pranoto Samarinda.\n SUKSES SELALU IDF Samarinda!"
+      "Nama saya Sella, berasal dari kota Samarinda - Kalimantan Timur \n\n Saya alumni IDF Angkatan 2017, jurusan STAF AIRLINES program kuliah 1 tahun.\n\n Saya bekerja di Batik Air bandara Apt Pranoto Samarinda. \n\n Tak ada yang sia - sia, semua bergantung dari usaha keras dan tak patah semangat. \n\n Belajarlah di IDF jika ingin kerja di maskapai \n\n SUKSES IDF Samarinda"
   }
 ];
 
