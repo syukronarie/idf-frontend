@@ -14,7 +14,7 @@ const TestimonyData = [
   {
     id: "2",
     name: "Jessica Anjelia",
-    image: "/img/testimony/image4.jpg",
+    image: "/img/testimony/image4.jpeg",
     text:
       "Hy nama ku Jessica Anjelia,\n aku lulusan Indonesia Dirgantara Flight ( IDF ) sekolah penerbangan terbaik di Samarinda. \n Aku alumni tahun 2020, selama di IDF aku mendapat pengalaman di dunia penerbangan karena ada On Job Training ( OJT ) dan bisa di bantu untuk penempatan kerja. \n Belajar di IDF sangat menyenangkan karena mendapat ilmu yang bisa di praktekkan secara langsung contohnya aku yang di bantu OJT di bagian Ground Handling - CDA di bandara APT Pranoto Samarinda.\n Jadi bagi teman - teman yang ingin berkarir di penerbangan IDF lah solusinya. Ayo buruan daftar sekarang."
   },
