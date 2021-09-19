@@ -9,15 +9,14 @@ const TestimonyData = [
     name: "Susilo Saputra",
     image: "/img/testimony/image1.jpeg",
     text:
-      "Haaaaii namaku Susilo Saputra biasa dipanggil Lilo. \n\n Kuliah di IDF Samarinda tuh keren loh.\n\n Bangganya.... aku ditempatkan magang di AMC bandara APT Pranoto Samarinda. \n\n Ikutan yuuuk segera daftar" 
+      "Haaaaii namaku Susilo Saputra biasa dipanggil Lilo. \n Kuliah di IDF Samarinda tuh keren loh.\n Bangganya.... aku ditempatkan magang di AMC bandara APT Pranoto Samarinda. \n Ikutan yuuuk segera daftar" 
   },
   {
     id: "2",
     name: "Jessica Anjelia",
     image: "/img/testimony/image4.jpg",
     text:
-      "Hy nama ku Jessica Anjelia,\n\n aku lulusan Indonesia Dirgantara Flight ( IDF ) sekolah penerbangan terbaik di Samarinda. \n\n Aku alumni tahun 2020, selama di IDF aku mendapat pengalaman di dunia penerbangan karena ada On Job Training ( OJT ) dan bisa di bantu untuk penempatan kerja. \n\n Belajar di IDF sangat menyenangkan karena mendapat ilmu yang bisa di praktekkan secara langsung contohnya aku yang di bantu OJT di bagian Ground Handling - CDA di bandara APT Pranoto Samarinda.\n\n 
-       Jadi bagi teman - teman yang ingin berkarir di penerbangan IDF lah solusinya. Ayo buruan daftar sekarang."
+      "Hy nama ku Jessica Anjelia,\n aku lulusan Indonesia Dirgantara Flight ( IDF ) sekolah penerbangan terbaik di Samarinda. \n Aku alumni tahun 2020, selama di IDF aku mendapat pengalaman di dunia penerbangan karena ada On Job Training ( OJT ) dan bisa di bantu untuk penempatan kerja. \n Belajar di IDF sangat menyenangkan karena mendapat ilmu yang bisa di praktekkan secara langsung contohnya aku yang di bantu OJT di bagian Ground Handling - CDA di bandara APT Pranoto Samarinda.\n Jadi bagi teman - teman yang ingin berkarir di penerbangan IDF lah solusinya. Ayo buruan daftar sekarang."
   },
   {
     id: "3",
@@ -31,7 +30,7 @@ const TestimonyData = [
     name: "Sella",
     image: "/img/testimony/image2.jpeg",
     text:
-      "Nama saya Sella, berasal dari kota Samarinda - Kalimantan Timur \n\n Saya alumni IDF Angkatan 2017, jurusan STAF AIRLINES program kuliah 1 tahun.\n\n Saya bekerja di Batik Air bandara Apt Pranoto Samarinda. \n\n Tak ada yang sia - sia, semua bergantung dari usaha keras dan tak patah semangat. \n\n Belajarlah di IDF jika ingin kerja di maskapai \n\n SUKSES IDF Samarinda"
+      "Nama saya Sella, berasal dari kota Samarinda - Kalimantan Timur \n Saya alumni IDF Angkatan 2017, jurusan STAF AIRLINES program kuliah 1 tahun.\n Saya bekerja di Batik Air bandara Apt Pranoto Samarinda. \n Tak ada yang sia - sia, semua bergantung dari usaha keras dan tak patah semangat. \n\n Belajarlah di IDF jika ingin kerja di maskapai \n SUKSES IDF Samarinda"
   }
 ];
 
